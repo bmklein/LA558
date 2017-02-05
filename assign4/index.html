@@ -1,0 +1,115 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Assignment 4</title>
+
+  <link rel="stylesheet" type="text/css" href="css/assign4.css">
+  
+  <script>
+ //Array one
+  var winner = ["Green Bay Packers","Green Bay Packers","New York Jets","Kansas City Chiefs","Baltimore Colts","Dallas Cowboys","Miami Dolphins","Miami Dolphins","Pittsburgh Steelers","Pittsburgh Steelers",
+			  "Oakland Raiders","Dallas Cowboys","Pittsburgh Steelers","Pittsburgh Steelers","Oakland Raiders","San Francisco 49ers","Washington Redskins","Los Angeles Raiders","San Francisco 49ers","Chicago Bears",
+			  "New York Giants","Washington Redskins","San Francisco 49ers","San Francisco 49ers","New York Giants","Washington Redskins","Dallas Cowboys","Dallas Cowboys","San Francisco 49ers","Dallas Cowboys",
+			  "Green Bay Packers","Denver Broncos","Denver Broncos","St. Louis Rams","Baltimore Ravens","New England Patriots","Tampa Bay Buccaneers","New England Patriots","New England Patriots","Pittsburgh Steelers",
+			  "Indianapolis Colts","New York Giants","Pittsburgh Steelers","New Orleans Saints","Green Bay Packers","New York Giants","Baltimore Ravens","Seattle Seahawks","New England Patriots","Denver Broncos",
+			  "New England Patriots or Atlanta Falcons"]
+  
+//Function One
+  function teamDisplay() {
+	  x = document.getElementById("winningNum").value;
+	  document.getElementById("winnerName").innerHTML = winner[x-1];
+  } 
+ 
+ //Object One and Object Two
+  var quarterback = [{name: "Tom Brady", games: "12", yards: "3554", touchdowns: "28", interceptions: "2", rating: "112.2"},
+					 {name: "Matt Ryan", games: "16", yards: "4944", touchdowns: "38", interceptions: "7", rating: "117.1"}];
+					 
+var listCount = 0;
+
+//Function Two
+function quarterbackChange() {	
+	listCount = listCount + 1;
+	
+//If Then Case
+	if (listCount >= (quarterback.length)) {  
+		listCount = 0;
+	}
+	
+	i = listCount;
+	
+	document.getElementById("name").innerHTML = quarterback[i].name;
+	document.getElementById("games").innerHTML = quarterback[i].games;
+	document.getElementById("yards").innerHTML = quarterback[i].yards;
+	document.getElementById("touchdowns").innerHTML = quarterback[i].touchdowns;
+	document.getElementById("interceptions").innerHTML = quarterback[i].interceptions;
+	document.getElementById("rating").innerHTML = quarterback[i].rating;
+}
+
+
+function load() {
+	document.getElementById("name").innerHTML = quarterback[0].name;
+	document.getElementById("games").innerHTML = quarterback[0].games;
+	document.getElementById("yards").innerHTML = quarterback[0].yards;
+	document.getElementById("touchdowns").innerHTML = quarterback[0].touchdowns;
+	document.getElementById("interceptions").innerHTML = quarterback[0].interceptions;
+	document.getElementById("rating").innerHTML = quarterback[0].rating;
+}	
+
+	
+  </script> 
+</head>
+<body onload="load()">
+    <br>
+   
+	<h1>Super Bowl Playground</h1>
+	
+	<p>
+		<label for="amount">The winning team in Super Bowl</label>
+		<!--Input Field-->
+		<input type="text" id="winningNum" style="border: 2; font-weight: bold;" onChange="teamDisplay()" value="Enter 1-51" size="10"/>
+		was the:
+	</p><br>
+	
+	<h2 id="winnerName">-</h2><br>
+	
+	<hr>
+	<h1>Quarterback Comparison</h1>
+	
+<!--Button-->	
+<input type="button" onclick="quarterbackChange()" value="Switch Quarterback">
+<br>
+<br>
+Name: <span id='name'>-</span><br>
+Games: <span id='games'>-</span><br>
+Yards: <span id='yards'>-</span><br>
+Touchdowns: <span id='touchdowns'>-</span><br>
+Interceptions: <span id='interceptions'>-</span><br>
+Rating: <span id='rating'>-</span><br><br><br>
+
+<hr>
+
+<h1>Game Starts in..</h1>
+
+<p id="count">-</p>
+
+<script>
+
+//loop
+var timer = ["Three,", "Two,", "One,", "Kickoff!"];
+var text = "";
+var i;
+for (i = 0; i < timer.length; i++) 
+	{text += timer[i] + "<br>";
+}
+document.getElementById("count").innerHTML = text;
+
+</script>
+ 
+ 	<br><br><br><br>
+	<!--Output Field of Input-->
+	<h5 style=text-align:left>Brandon Geber (Klein)"<br>Assignment 4"</h5>
+	
+</body>
+</html>
