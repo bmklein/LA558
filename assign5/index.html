@@ -1,0 +1,95 @@
+<!doctype html>
+ 
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Assignment 5</title>
+
+  <link rel="stylesheet" type="text/css" href="css/assign5.css">
+  
+<body>  
+
+	<h1> Super Bowl Playground 2</h1><br><br><br><br>
+	
+	<div id=radioButtons></div>
+		<h2>Who did you want to win Super Bowl LI?</h2>
+		
+		<input type="radio" id="team1" name="team" value="New England Patriots">New England Patriots<br>
+		<input type="radio" id="team2" name="team" value="Atlanta Falcons">Atlanta Falcons<br><br>
+		
+		<button type="button" onclick="displayWin()">Click for Message</button><br><br><br>
+  
+		<h3 id="message" style=color:limegreen></h3><br><br>
+		
+		<hr><br>
+	
+	
+	<div id=checkBox></div>
+		<h2>How did you watch the game?</h2><br><br>
+		
+		<select id="watch" onchange="gameWatch()">
+			<option value="Select">Select</option>
+			<option value="Fun!">At a Party</option>
+			<option value="My Favorite">At Home</option>
+			<option value="Respectable">Didn't Watch</option>     
+		</select><br><br>
+	
+		<h3 id="gameTime" style=color:limegreen></h3><br><br><br>
+	
+	
+		<hr><br>
+		
+		
+	
+	
+	<div id=textInput></div>
+		<h2>What is your Favorite NFL team?</h2>
+	
+	
+		Enter team here: <input type="text" id="favoriteTeam" value="Chicago Bears"><br><br><br><br>
+  
+		<button type="button" onclick="displayTeam()">Display Team Name</button><br><br><br>
+  
+		<h3 id="teamName" style=color:limegreen></h3><br><br><br>
+		
+		<hr><br>
+ 
+	
+	<div id=embeddedMap></div>
+		<h2>Now on to baseball...</h2><br><br>
+		
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-87.637215256691%2C41.82802642132571%2C-87.63013422489168%2C41.83160390076148&amp;layer=mapnik&amp;marker=41.82981530189146%2C-87.63367400000004" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=41.82982&amp;mlon=-87.63367#map=18/41.82982/-87.63367">View Larger Map</a></small>
+	
+<script>
+	function displayTeam() {
+	firstName = document.getElementById("favoriteTeam").value;
+  
+	document.getElementById("teamName").innerHTML = firstName;
+	}
+	
+	function displayWin() {
+	var patriots = "Congratulations!"
+	var falcons = "I'm sorry for your loss.."
+		if
+	(document.getElementById('team1').checked)	{
+	document.getElementById('message').innerHTML = patriots;
+		}else
+	if(document.getElementById('team2').checked)	{
+	document.getElementById('message').innerHTML = falcons;
+		}
+	}
+  
+	function gameWatch() {
+	x = document.getElementById("watch").value;
+	document.getElementById("gameTime").innerHTML = x;
+	}
+	
+</script>
+ 
+ 	<br><br><br><br>
+
+	<h5 style=text-align:left>Brandon Geber (Klein)"<br>Assignment 5"</h5>
+	
+
+</body>
+</html>
