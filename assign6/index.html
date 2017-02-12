@@ -1,0 +1,84 @@
+<!doctype html>
+ 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 6</title>
+
+	<link rel="stylesheet" type="text/css" href="css/assign6.css">
+	
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+			$("#buttonOne").click(function(){
+				$("p").toggle();
+			});
+			
+			$("#buttonTwo").click(function(){
+				$("#slide").slideToggle();
+			});
+			
+			$("#buttonThree").click(function(){
+				$(".testOne").css("background-color", "slategrey");
+			});
+			
+			$("#buttonFour").click(function(){
+				$(".testTwo").css("background-color", "slategrey").css("color", "lightgrey").css("font-size", "40px");
+			});			
+		});
+	</script>
+	
+</head>
+  
+<body>  
+	<h1> jQuery Playground</h1><br><br><br><br>
+	
+	<div id="one">
+		<h2>Example One</h2>
+
+		<p>Using jQuery to select an element "p", it is possible</p>
+		<p>to toggle off and on multiple elements at once.</p>
+
+		<button id="buttonOne">Hide Element "p"</button>
+	</div><br><br>
+	
+	<div id="two">
+		<h2>Example Two</h2>
+		
+		<h4>It is also possible to select and slide single ID's</h4>
+		<h4 id="slide"> when you are looking to change a single item...</h4>
+		
+		<button id="buttonTwo">Slide certain ID</button>
+	</div><br><br>
+	
+	<div id="three">
+		<h2>Example Three</h2>
+		
+		<h4 class="testOne">Or select items by class</h4>
+		<h4 class="class2">when you want to select and</h4>
+		<h4 class="testOne">highlight only related items.</h4>
+		
+		<button id="buttonThree">Highlight by Class</button>
+	</div><br><br>
+	
+	<div id="four">
+		<h2>Example Four</h2>
+		
+		<h4> There are many events to choose from.</h4>
+		<h4 class="testTwo">You can even chain events together,</h4>
+		<h4>like changing font color, size, and background color in one click!</h4>
+		
+		
+		<button id="buttonFour">Start Chained Events</button>		
+	</div>
+ 	<br><br><br><br>
+
+	<h5 style=text-align:left>Brandon Geber (Klein)"<br>Assignment 6"</h5>
+	
+</body>
+</html>

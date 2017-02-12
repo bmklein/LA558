@@ -1,0 +1,48 @@
+body {
+  background-color: dimgrey;
+  color: White;
+  text-align: center;
+  font-family: Georgia;
+
+}
+
+h1 {
+  color: White;
+  text-align: center;
+  background-color: slategrey;
+  padding: 30px;
+}
+
+h3 {
+  color: white;
+  text-align: center
+}
+
+h5 {
+	background-color: slategrey;
+	padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: Black;
+}  
