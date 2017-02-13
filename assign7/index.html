@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 7>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 3</title>
+	<link rel="stylesheet" type="text/css" href="css/assign7.css">
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	
+	<script>
+		
+		$(function() {
+			var totalMaps = 6;
+			
+			for (i=0; i < totalMaps; i++) {
+				$("#map" + i).hide();
+			}
+			
+			$("#map0").show();
+			
+			$("input:radio[name=basemap]").click(function() {
+				base = $("input:radio[name=basemap]:checked").val();
+				$("#map0, #map1").hide();
+				
+				$("#map" + base).show();
+			});
+			
+			$(".mapLayer").change(function() {
+				x = $(this).val();
+				console.log("toggled map" + x);
+				$("#map" + x).toggle();
+			});
+		})
+	
+	</script>
+</head>
+  
+<body>
+
+	<h1>jQuery Redux</h1><br><br>
+
+	<div id="container">
+		
+		<div id="menu">
+			<h4 style="text-align: center">Map Layers</h4>
+			<input type="radio" name="basemap" value="0" checked>Streets
+			<br>
+			<input type="radio" name="basemap" value="1">Landcover
+			<br>
+			<hr>
+			<input type="checkbox" class="mapLayer" value="2"> Iowa Border
+			<br>
+			<input type="checkbox" class="mapLayer" value="3"> Interstate
+			<br>
+			<input type="checkbox" class="mapLayer" value ="4"> Scenic Byways
+			<br>
+			<input type="checkbox" class="mapLayer" value ="5"> Wind Turbines
+			<br>
+			</div> <!-- End Menu -->
+		</div> <!-- End Container -->
+
+		
+	<div id="maps">
+		<img id="map0" src="images/basemapStreets.png">
+		<img id="map1" src="images/basemapLandcover.png">
+		<img id="map2" src="images/iowaBorder.png">
+		<img id="map3" src="images/Interstate.png">
+		<img id="map4" src="images/scenicByways.png">
+		<img id="map5" src="images/windTurbines.png">
+	
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+		
+	
+	<h5 style=text-align:left>Brandon Geber (Klein)<br>Assignment 7</h5>
+	
+  
+</body>
+
+
+</html>
+
+
+
