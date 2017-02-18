@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 8>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 8</title>
+	<link rel="stylesheet" type="text/css" href="css/assign8.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+
+	<h1 id="header">Leaflet Exercise 2</h1><br><br>
+			
+		<div id="map">
+		<script>
+		//Map Locations
+			var map = L.map('map').setView([42.0118719,-93.61099289999999], 13);
+
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+				}).addTo(map);
+		//Markers		
+			var marker1 = L.marker([41.9946864,-93.60954749999996]).addTo(map);
+			
+			var marker2 = L.marker([42.0248212,-93.61553859999998]).addTo(map);
+			
+			var marker3 = L.marker([42.02638409999999,-93.6150839]).addTo(map);
+			
+			marker2.bindPopup("Bar La Tosca").openPopup();
+			
+			marker3.bindPopup("Torrent Brewing Company").openPopup();
+			
+			marker1.bindPopup("Mucky Duck Pub").openPopup();
+			
+		//Circles	
+			var circle1 = L.circleMarker([42.02593736354083,-93.61782789230347], 200).addTo(map);
+				circle1.setStyle({color: 'blue', fill: true, fillOpacity: 0.8, fillColor: 'blue'});
+				circle1.bindPopup("Main Bus Stop").openPopup();
+			
+			var circle2 = L.circleMarker([41.99349188767083,-93.6025607585907], 200).addTo(map);
+				circle2.setStyle({color: 'black', fill: true, fillOpacity: 0.8, fillColor: 'black'});
+				circle2.bindPopup("Home Bus Stop").openPopup();
+				
+		//Circle Magnitude
+			var circle3 = L.circleMarker([42.007659920733644,-93.5711145401001]).addTo(map);
+				circle3.setStyle({fillColor: 'red', color: 'red', radius: 20});
+				circle3.bindPopup("High Traffic Intersection").openPopup();
+			
+			var circle4 = L.circleMarker([42.00648003615596,-93.58649969100952]).addTo(map);
+				circle4.setStyle({fillColor: 'green', color: 'green', radius: 10});
+				circle4.bindPopup("Moderate Traffic Intersection").openPopup();
+			
+			var circle5 = L.circleMarker([42.03450435167559,-93.57046008110046]).addTo(map);
+				circle5.setStyle({fillColor: 'yellow', color: 'yellow', radius: 15});	
+				circle5.bindPopup("Low Traffic Intersection").openPopup();
+
+			
+		</script>
+		
+		</div><!--Map end-->
+	<br><br>
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 8</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
