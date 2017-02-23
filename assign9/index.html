@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 9>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 9</title>
+	<link rel="stylesheet" type="text/css" href="css/assign9.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+
+	<h1 id="header">Assignment 9</h1><br><br>
+			
+		<div id="map">
+		<script>
+		//Map Locations
+			var map = L.map('map').setView([42.31249340000001,-93.5787757], 8);
+
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+				}).addTo(map);
+		
+        //Regular Marker		
+			var marker1 = L.marker([42.106325947353525,-93.62179219722748]).addTo(map);
+			 marker1.bindPopup("<img src= images/turf.png>");
+                                                         
+        //Style Marker                                                 
+			var adminIcon = L.icon({
+                iconUrl: 'images/administration.png',
+                iconSize: [32, 37],
+            });
+    
+            var marker2 = L.marker([41.52756,-93.962672], {
+                icon: adminIcon,
+            }).addTo(map);
+            
+            marker2.bindPopup("<img src= images/logo.png>");
+    
+        //Div Marker
+    
+            var myDivIcon1 = L.divIcon({
+                iconSize: new L.Point(60, 40),
+                html: "Shared Territory",
+                className: "leaflet",                
+            });
+    
+            var marker3 = L.marker([41.6005448,-93.60910639999997], {
+                icon: myDivIcon1,}).addTo(map)
+			
+        //CircleMarkers
+    
+            var locations = [
+                ["15",42.06559860000001,-94.8672793,"Des Moines"],//Carroll
+                ["20",42.0494674,-92.90803749999998,"Des Moines"],//Marshalltown
+                ["25",41.9778795,-91.66562320000003,"Waterloo"],//Cedar Rapids
+                ["25",42.492786,-92.3425775,"Waterloo"],//Waterloo
+                ["20",41.4080327,-92.916405,"Des Moines"],//Pella
+                ["45",43.1450748,-95.144318,"Ames"],//Spencer
+                ["25",43.1535728,-93.20103669999997,"Ames"],//Mason City
+                ["15",43.30330559999999,-91.78570919999999,"Waterloo"],//Decorah
+                ["40",42.0307812,-93.63191310000002,"Ames"],//Ames
+                ["20",41.35804839999999,-93.55743760000001,"Des Moines"],//Indianola
+            ];
+    
+            function getColor(d) {
+                return  d == 'Des Moines' ? '#c9150c' :
+                        d == 'Waterloo' ? "#052b8b" :
+                        d == 'Ames' ? "#5c5f02" :
+                                   "#FFFFFF" ;
+            }
+  
+            for (var i = 0; i < locations.length; i++) {
+            marker = new L.circleMarker([locations[i][1],locations[i][2]], {
+                radius: locations[i][0]/2,
+                fillColor: getColor(locations[i][3]), 
+                color: "dimgrey",
+                weight: 4,
+                opacity: 1,
+                fillOpacity: 0.7    
+            })
+                                                 
+            .bindPopup("Territory: "+locations[i][3]).addTo(map);
+            }; 
+               
+                                              
+			
+		</script>
+		
+		</div><!--Map end-->
+	<br><br>
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 9</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
