@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 10>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 10</title>
+	<link rel="stylesheet" type="text/css" href="css/assign10.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Assignment 10</h1><br><br>
+			
+		<div id="map">
+		<script>
+		//Map Locations
+			var map = L.map('map').setView([42.31249340000001,-93.5787757], 7);
+
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+				}).addTo(map);
+                                            	
+		</script>
+		
+		</div><!--Map end-->
+        <div id="notes">
+                <h2 style=text-align:center >Click on each button to perform an event</h2><br>
+                <h3> Using <button id="setView"><b>Set View</b></button> will allow the user to change the map view to a specified location, as where <button id="panTo"><b>Pan To</b></button> will move the viewer to the new location (first zoom out to the state of Iowa)</h3>
+                <h3>The <button id="setZoom"><b>Set Zoom</b></button> button will change the zoom level to a specified level, or use <button id="zoomIn"><b>Zoom In</b></button> and <button id="zoomOut"><b>Zoom Out</b></button> to change the zoom incrementally </h3>
+                
+                                                        
+        <script>
+     $("#setView").click(function(){
+        map.setView(new L.LatLng(42.0307812,-93.63191310000002),11);
+    });    
+                 
+     $("#setZoom").click(function(){
+        map.setZoom(15);
+    }); 
+                 
+     $("#zoomOut").click(function(){
+        map.zoomOut(2);
+    });                  
+           
+     $("#zoomIn").click(function(){
+        map.zoomIn(2);
+    }); 
+                
+     $("#panTo").click(function(){
+        map.panTo(new L.LatLng(42.50055830000001,-90.66457179999998),11);
+    });
+                         
+        </script>
+        
+        </div><!--Notes End-->
+    </div>
+                       
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 10</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
