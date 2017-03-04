@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 11>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 11</title>
+	<link rel="stylesheet" type="text/css" href="css/assign11.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Assignment 11</h1><br><br>
+			
+		<div id="map">
+		<script>
+                     
+//Base Layers
+            var OSM = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            });
+
+            var OTM = L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	           maxZoom: 17,
+	           attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+            });
+                                                           
+            var nightAerial = L.tileLayer('http://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
+	           attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
+	           bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+	           minZoom: 1,
+	           maxZoom: 8,
+	           format: 'jpg',
+	           time: '',
+	           tilematrixset: 'GoogleMapsCompatible_Level'
+            });
+
+
+//Markers Overlay
+            var bistate = L.marker([41.5090839,-90.57825049999997]).bindPopup('Bi-State'),
+                mpojc    = L.marker([41.66043699999999,-91.5295731]).bindPopup('MPOJC'),
+                corridorMPO    = L.marker([41.9774284,-91.66969039999998]).bindPopup('Corridor MPO'),
+                dmats    = L.marker([42.49405700000001,-90.77518199999997]).bindPopup('DMATS');
+                inrcog    = L.marker([42.499798,-92.33658000000003]).bindPopup('INRCOG');
+                aampo    = L.marker([42.02635050000001,-93.61771870000001]).bindPopup('AAMPO');
+                dmampo    = L.marker([41.58939199999999,-93.623695]).bindPopup('DMAMPO');
+                mapa    = L.marker([41.2690734,-95.94495460000002]).bindPopup('MAPA');
+            var simpco = L.marker([42.5026188,-96.40483169999999]).bindPopup('SIMPCO');
+            
+            var mpo = L.layerGroup([bistate, mpojc, corridorMPO, dmats, inrcog, aampo, dmampo, mapa,        simpco]);
+            
+
+//Polygon Overlay
+            var influence = L.polygon([
+                [41.5090839,-90.57825049999997],
+                [41.58939199999999,-93.623695],
+                [41.2690734,-95.94495460000002],
+                [42.5026188,-96.40483169999999],
+                [42.49405700000001,-90.77518199999997]
+            ],{
+                color: 'darkslategrey',
+                fillColor: 'slategrey',
+                fillOpacity: 0.5,
+                weight: 3
+            });
+
+//Map and Initial Layers
+            var map = L.map('map', {
+    		  center: new L.LatLng(42.0307812,-93.63191310000002),
+    		  zoom: 8,
+    		  layers: [OSM, mpo]
+            });
+
+//Layer Control
+            var baseMaps = {
+                "Open Street Map": OSM,
+                "Open Topo Map": OTM,
+                "Night Aerial": nightAerial,
+            };
+       		
+            var overlayMaps = {
+                "MPO": mpo,
+                "Area of Influence": influence
+            };
+                                   
+            L.control.layers(baseMaps, overlayMaps).addTo(map);
+                                  	
+		</script>
+		
+    </div>
+                       
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 11</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
