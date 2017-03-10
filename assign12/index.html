@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 12>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 12</title>
+	<link rel="stylesheet" type="text/css" href="css/assign12.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Assignment 12</h1><br><br>
+			
+		<div id="map">
+		<script>
+		
+//JSON
+				var cities = [{
+					"name" : "Mason City",
+					"lat" : "43.1536",
+					"long" : "-93.2010",
+					},
+				{
+					"name" : "Fort Dodge",
+					"lat" : "42.4975",
+					"long" : "-94.1680",
+				}];
+
+//GeoJSON
+
+			var myGeoJSON = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"stroke":"#ff0000","stroke-width":5,"stroke-opacity":1},"geometry":{"type":"LineString","coordinates":[[-91.61911010742188,41.92680320648791],[-91.53121948242188,41.92782492551717],[-91.51336669921875,41.92475971933975],[-91.48452758789062,41.916585116228354],[-91.39251708984374,41.917606998887024],[-91.3128662109375,41.918628865183045],[-91.20986938476562,41.89001042401827],[-91.04782104492188,41.887965758804484],[-90.96542358398438,41.87262868373214],[-90.83358764648438,41.829665291469354],[-90.56854248046875,41.82557203489185],[-90.56579589843749,41.80714914168836]]}},{"type":"Feature","properties":{"stroke":"#ff0000","stroke-width":5,"stroke-opacity":1},"geometry":{"type":"LineString","coordinates":[[-93.6005973815918,41.791280737284424],[-93.57038497924805,41.791280737284424],[-93.54257583618164,41.79153671046777],[-93.53553771972656,41.790768787851285],[-93.53073120117188,41.78731302223369],[-93.53004455566406,41.78206502192826],[-93.52935791015625,41.77694460766678],[-93.52935791015625,41.76849503030295],[-93.52987289428711,41.73788800556734],[-93.52987289428711,41.73430129029804],[-93.52489471435547,41.73122680350189],[-93.515625,41.7280240566069],[-93.51184844970703,41.71931177723655],[-93.5101318359375,41.71264864888721],[-93.51081848144531,41.69983299902508],[-93.51116180419922,41.68522004222073],[-93.51116180419922,41.67445047616417],[-93.51631164550781,41.67034731026395],[-93.52249145507812,41.66726976419721],[-93.52592468261719,41.66316614058965],[-93.52180480957031,41.658292747859264]]}},{"type":"Feature","properties":{"stroke":"#ff0000","stroke-width":5,"stroke-opacity":1},"geometry":{"type":"LineString","coordinates":[[-93.77311706542969,41.52245918082221],[-93.80847930908203,41.52194509008648],[-93.8283920288086,41.524772538591165],[-93.85345458984375,41.52734283911194],[-93.88092041015625,41.53017005175159],[-93.90186309814453,41.53325414281322],[-93.95233154296875,41.5419916023209],[-93.95301818847656,41.54764462357737]]}}]}
+                     
+//Base Layers
+            var OSM = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                maxZoom: 18
+            });
+
+            var OTM = L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	           maxZoom: 17,
+	           attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+            });
+                                                           
+
+
+//Markers Overlay
+            var bistate = L.marker([41.5090839,-90.57825049999997]).bindPopup('Bi-State'),
+                mpojc    = L.marker([41.66043699999999,-91.5295731]).bindPopup('MPOJC'),
+                corridorMPO    = L.marker([41.9774284,-91.66969039999998]).bindPopup('Corridor MPO'),
+                dmats    = L.marker([42.49405700000001,-90.77518199999997]).bindPopup('DMATS');
+                inrcog    = L.marker([42.499798,-92.33658000000003]).bindPopup('INRCOG');
+                aampo    = L.marker([42.02635050000001,-93.61771870000001]).bindPopup('AAMPO');
+                dmampo    = L.marker([41.58939199999999,-93.623695]).bindPopup('DMAMPO');
+                mapa    = L.marker([41.2690734,-95.94495460000002]).bindPopup('MAPA');
+            var simpco = L.marker([42.5026188,-96.40483169999999]).bindPopup('SIMPCO');
+            
+            var mpo = L.layerGroup([bistate, mpojc, corridorMPO, dmats, inrcog, aampo, dmampo, mapa, simpco]);
+            
+
+//Map and Initial Layers
+            var map = L.map('map', {
+    		  center: new L.LatLng(42.0307812,-93.63191310000002),
+    		  zoom: 8,
+    		  layers: [OSM, mpo]
+            });
+			
+//Add JSON to map
+
+			var iconMarkerURL = "http://www.googlemapsmarkers.com/v1/";
+
+			for (var i = 0; i < cities.length; i++) {
+
+			var marker = L.marker([cities[i].lat, cities[i].long], {    
+				icon: L.icon({
+				iconUrl: iconMarkerURL + "ff0000",
+				iconSize:[20, 34],
+			}),
+			title: cities[i].name
+			}).bindPopup("<b>"+cities[i].name+"</b>").addTo(map);
+			}
+
+//Add GeoJSON to Map
+
+			var myStyle = {
+				"color": "red",
+				"weight": 5,
+				"opacity": 0.5,
+			};
+
+			var newRoads = L.geoJSON(myGeoJSON, {
+				style: myStyle,
+				}).addTo(map);
+
+//Layer Control
+            var baseMaps = {
+                "Open Street Map": OSM,
+                "Open Topo Map": OTM,
+            };
+       		
+            var overlayMaps = {
+                "MPO": mpo,
+				"Projects?": newRoads,
+				"Cities": marker
+				
+            };
+                                   
+            L.control.layers(baseMaps, overlayMaps).addTo(map);
+			
+
+                                  	
+		</script>
+		
+    </div>
+                       
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 12</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
