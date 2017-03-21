@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 13>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 13</title>
+	<link rel="stylesheet" type="text/css" href="css/assign13.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Assignment 13</h1><br><br>
+			
+		<div id="map">
+		<script>
+
+
+			var map = L.map('map').setView([42.0667, -93.4], 7);
+
+// Basemap
+			var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+					maxZoom: 18
+			}).addTo(map);
+
+
+//getColor function
+			function getColor(d) {
+				return d <= '5000' ? '#7a8086' :
+				d <= '10000' ? "#708090" :
+				d <= '20000' ? "#66809a" :
+				d <= '40000' ? "#5c80a4" :
+				d <= '80000' ? "#5380ad" :
+				d <= '160000' ? "#4980b7" :
+				d <= '320000' ? "#3f80c1" :
+				d <= '500000' ? "#3580cb" :
+				"#FFFFFF"; //white
+			}
+
+			function style(feature) {
+				return {
+				fillColor: getColor(feature.properties.POP2010),
+				weight: 2,
+				opacity: .8,
+				color: 'white',
+				fillOpacity: 0.8
+				};
+			}
+
+//External Link
+			url = "https://bmklein.github.io/LA558/IowaCounties.json";
+
+			var geojsonLayer = new L.GeoJSON.AJAX(url , {
+				style: style,
+				onEachFeature: function (feature, layer) {
+					htmlText = "<strong>" + feature.properties.NAME+ "</strong><br>2010 Population: <b>"  + feature.properties.POP2010 + "</b>";
+					layer.bindPopup(htmlText);
+					layer.bindTooltip(feature.properties.NAME);
+				}
+			}).addTo(map);
+	
+//Legend with 8 Items
+			var legend = L.control({
+				position: 'bottomright'
+			});
+
+			legend.onAdd = function(map) {
+
+			var div = L.DomUtil.create('div', 'info legend'),
+				POP2010 = [5000, 10000, 20000, 40000, 80000, 160000 , 320000 , 500000],
+				labels = ['Metro', ' ', ' ','Non-metro', ' ', ' ', ' ', 'Rural', ' '];
+
+			div.innerHTML += "<b>2010 Population</b><br>";
+ 
+			for (var i = 0; i < POP2010.length; i++) {
+				div.innerHTML +=
+				'<i style="background:' + getColor(POP2010[i] ) + ' "></i> ' +
+				POP2010[i] +'<br>';
+			}
+
+			return div;
+			};
+			legend.addTo(map);
+			
+//layer control
+			var baseMaps = {
+				"OpenStreetMap": osm,
+			};
+
+			var overlayMaps = {
+				"Populations": geojsonLayer,
+
+			};
+
+			L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+//Layer Legend Control
+			map.on('overlayremove', function (eventLayer) {
+				if (eventLayer.name == "Populations") {
+				this.removeControl(legend);
+				}
+			});
+
+			map.on('overlayadd', function (eventLayer) {
+				if (eventLayer.name == "Populations") {
+				legend.addTo(this);
+				}
+			});
+
+			
+
+                                  	
+		</script>
+		
+    </div>
+                       
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 13</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
