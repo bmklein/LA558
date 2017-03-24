@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 14>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 14</title>
+	<link rel="stylesheet" type="text/css" href="css/assign14.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Assignment 14: Previous Week's Earthquake total = <span id = "totalNumber"></span></h1><br><br>
+			
+		<div id="map">
+		<script>
+
+
+			var map = L.map('map').setView([42.0667, -93.4], 4);
+
+// Basemap
+			var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+					maxZoom: 18
+			}).addTo(map);
+			
+			var nightAerial = L.tileLayer('http://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
+	           attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
+	           bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+	           minZoom: 1,
+	           maxZoom: 8,
+	           format: 'jpg',
+	           time: '',
+	           tilematrixset: 'GoogleMapsCompatible_Level'
+            });
+
+
+//Default Markers
+			var geojsonMarkerOptions = {
+				color: "#000",
+				weight: 0.0,
+				opacity: 1,
+				fillOpacity: 0.5
+};
+
+//getColor Function
+			function getColor(d) {
+			return d >= 6 ? 'darkred' :
+					d >= 5 ? 'red' :
+					d >= 4 ? 'orange' :
+					d >= 3 ? 'yellow' :
+					d >= 2 ? 'lightgreen' :
+					d <= 2 ? 'green' :
+					'#FFFFFF';
+}
+
+//Dynamic Data
+			myURL = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
+
+			var geojsonLayer = new L.GeoJSON.AJAX(myURL, {
+				pointToLayer: function(feature, latlng) {
+				return new L.CircleMarker(latlng, geojsonMarkerOptions);
+			},
+			
+			style: function(feature) {
+
+				return {
+					radius: feature.properties.mag * 2 + 0.1,
+					fillColor: getColor(feature.properties.mag)
+				};
+			},
+			
+			onEachFeature: function(feature, layer) {
+				layer.bindPopup("<b>Mag:</b> " + feature.properties.mag + "<br> <b>Place:</b> " + feature.properties.place);
+			}
+			}).addTo(map);
+	
+//Legend with 6 Items
+			var legend = L.control({
+				position: 'bottomright'
+			});
+
+			legend.onAdd = function(map) {
+
+			var div = L.DomUtil.create('div', 'info legend'),
+				mag = [1, 2, 3, 4, 5, 6],
+				labels = ['Weak', ' ', ' ', ' ', ' ', 'Strong', ' '];
+
+			div.innerHTML += "<b>Earthquake <br> Magnitude</b><br>";
+ 
+			for (var i = 0; i < mag.length; i++) {
+				div.innerHTML +=
+				'<i style="background:' + getColor(mag[i] ) + ' "></i> ' +
+				mag[i] +' '+ labels[i]+'<br>';
+			}
+
+			return div;
+			};
+			legend.addTo(map);
+			
+//layer control
+			var baseMaps = {
+				"OpenStreetMap": osm,
+				"Night Aerial": nightAerial,
+			};
+
+			var overlayMaps = {
+				"Earthquakes": geojsonLayer,
+
+			};
+
+			L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+//Layer Legend Control
+			map.on('overlayremove', function (eventLayer) {
+				if (eventLayer.name == "Earthquakes") {
+				this.removeControl(legend);
+				}
+			});
+
+			map.on('overlayadd', function (eventLayer) {
+				if (eventLayer.name == "Earthquakes") {
+				legend.addTo(this);
+				}
+			});
+
+			$.ajax({
+				url: myURL,
+				dataType: 'json',
+			}).done(function(data) {
+
+				totalNumber = data.features.length;
+				$("#totalNumber").html(totalNumber);
+			});
+
+
+                                  	
+		</script>
+		
+    </div>
+                       
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 14</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
