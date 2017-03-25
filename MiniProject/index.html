@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Mini Project>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Mini Project</title>
+	<link rel="stylesheet" type="text/css" href="css/MiniProject.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+		
+	
+</head>
+  
+<body>
+
+	<div id="page">
+                  
+    <div id="content">
+	<h1 id="header">Iowa DOT's Traffic Recorder System</h1><br><br>
+			
+		<div id="map">
+		<script>
+
+//Set Map View
+			var map = L.map('map').setView([42.0667, -93.4], 8);
+
+// Basemaps
+			var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+					maxZoom: 18
+			}).addTo(map);
+			
+			var WSM = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+				attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
+			});
+			
+			var WI = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+				attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+			});
+			
+			var nightAerial = L.tileLayer('http://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
+	           attribution: 'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
+	           bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+	           minZoom: 1,
+	           maxZoom: 8,
+	           format: 'jpg',
+	           time: '',
+	           tilematrixset: 'GoogleMapsCompatible_Level'
+            });
+
+
+//Traffic getColor function
+			function getColor1(d) {
+				return d <= '5000' ? '#1a9850' :
+				d <= '10000' ? "#91cf60" :
+				d <= '20000' ? "#d9ef8b" :
+				d <= '40000' ? "#fee08b" :
+				d <= '60000' ? "#fc8d59" :
+				d <= '90000' ? "#d73027" :
+				"#FFFFFF";
+			}
+			
+//Recorders getColor function
+			function getColor2(d) {
+				return d < '200' ? 'black' :
+				d < '300' ? "grey" :
+				d < '800' ? "blue" :
+				d < '900' ? "lightblue" :
+				"#FFFFFF";
+			}
+
+//External Link
+			url = "https://bmklein.github.io/LA558/IowaATR.json";
+			
+//Traffic Markers			
+			var geojsonLayer1 = new L.GeoJSON.AJAX(url , {
+				pointToLayer: function (feature, latlng) {
+				return new L.CircleMarker(latlng, {
+					stroke: true,
+					weight: 0.0,
+					fillColor: getColor1(feature.properties.AADT),
+					fillOpacity: 0.5,
+					radius: 20,
+				});
+			},
+
+				onEachFeature: function (feature, layer) {
+				htmlText = "<b>" + "AADT: </b>"  + feature.properties.AADT;
+				layer.bindPopup(htmlText);
+				}
+			}).addTo(map);
+			
+//Recorders Markers			
+			var geojsonLayer2 = new L.GeoJSON.AJAX(url , {
+				pointToLayer: function (feature, latlng) {
+				return new L.CircleMarker(latlng, {
+					stroke: true,
+					weight: 0.0,
+					fillColor: getColor2(feature.properties.Atr_Number),
+					fillOpacity: 1,
+					radius: 5,
+				});
+			},
+
+				onEachFeature: function (feature, layer) {
+				htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+				layer.bindPopup(htmlText);
+				}
+			}).addTo(map);
+
+
+//Traffic Legend
+			var legend1 = L.control({
+				position: 'bottomleft'
+			});
+
+			legend1.onAdd = function(map) {
+
+			var div1 = L.DomUtil.create('div', 'info legend'),
+				AADT = [5000, 10000, 20000, 40000, 60000, 90000];
+
+			div1.innerHTML += "<b>AADT</b><br>";
+ 
+			for (var i = 0; i < AADT.length; i++) {
+				div1.innerHTML +=
+				'<i style="background:' + getColor1(AADT[i] ) + ' "></i> ' +
+				AADT[i] +'<br>';
+			}
+
+			return div1;
+			};
+			legend1.addTo(map);
+			
+//Recorders Legend			
+			var legend2 = L.control({
+				position: 'bottomright'
+			});
+
+			legend2.onAdd = function(map) {
+
+			var div2 = L.DomUtil.create('div', 'info legend'),
+				ATR = [100, 200, 700, 800],
+				legend = ["<b>Rural Interstate</b>", "<b>Rural Primary</b>", "<b>Municipal Interstate</b>", "<b>Municipal Primary</b>"];
+
+			div2.innerHTML += "<b>Traffic Groups</b><br>";
+ 
+			for (var i = 0; i < ATR.length; i++) {
+				div2.innerHTML +=
+				'<i style="background:' + getColor2(ATR[i] ) + ' "></i> ' +
+				legend[i] +'<br>';
+			}
+
+			return div2;
+			};
+			legend2.addTo(map);
+			
+//layer control
+			var baseMaps = {
+				"OpenStreetMap": osm,
+				"WorldStreetMap": WSM,
+				"Satellite": WI,
+				"Night Aerial": nightAerial,
+			};
+
+			var overlayMaps = {
+				"Traffic": geojsonLayer1,
+				"Recorders": geojsonLayer2,
+
+			};
+
+			L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+//Layer Legend Controls
+			map.on('overlayremove', function (eventLayer) {
+				if (eventLayer.name == "Traffic") {
+				this.removeControl(legend1);
+				}else if (eventLayer.name == "Recorders"){
+					this.removeControl(legend2);
+				}
+			});
+
+			map.on('overlayadd', function (eventLayer) {
+				if (eventLayer.name == "Traffic") {
+				legend1.addTo(this);
+				}else if (eventLayer.name == "Recorders"){
+					legend2.addTo(this);
+				}
+			});
+                               	
+		</script>
+		
+    </div><br><br>
+	<div id="notes">
+	
+	<h2 style=text-align:center>Iowa DOT's Traffic Monitoring Program</h2>
+		<p> The Iowa Department of Transportation's (Iowa DOT) Telemetrics team maintains a system of 175 traffic records throughout the state. These recorders are placed into
+			multiple traffic monitoring groups, each representing a change in classsification system (e.g. interstate, primary system, secondary system) and development intensity
+			(either rural or within municipal boundaries). Depicted above are the traffic recorders located in four of the main traffic monitoring groups: Rural interstate, rural
+			primary, municipal interstate, municipal primary. Each traffic recorder counts traffic volume passing through their sensors 24/7, many of which also collect a combination
+			 of vehicle classification (ADR+), weight (WIM), and speed. Data collected from these recorders are used in many processes within the department, included model validation,
+			 manual traffic count expansion, axle-correction factors, and system growth factors.</p>
+		<h3> Definitions</h3>
+		<p> <b>AADT:</b> Annual Average Daily Traffic, or the annual average amoumt of vehicles that pass through the recorders sensors<br><br>
+			<b>Unit ID:</b> Identification number for each recorder, where 100s= Rural Interstate, 200s = Rural Primary, 700s = Municipal Interstate, and 800s = Municipal Primary<br><br>
+			<b>Location:</b> Signed road segment that there traffic recorder is placed on<br><br>
+			<b>Unit Type:</b> Type of traffic recorder used to collect data, either an ADR or ADR+ (in pavement sensors), WAVE (Radar Sensors), or WIM (in pavment weight sensors)<br><br>
+			<b>District:</b> Identification number for the Iowa DOT district that maintains the road segment<br><br>
+			<b>Lanes:</b> Number of lanes covered at the traffic recorder location <br><br>
+			More information on Iowa DOT's telemetrics office can be found <a href=http://www.iowadot.gov/systems_planning/pr_guide/Traffic/Guide_3192014.pdf>here</a>
+    </div>
+	
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Mini Project</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
