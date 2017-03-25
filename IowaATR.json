@@ -106,7 +106,7 @@
       "properties": {
         "FID": 4,
         "Atr_Number": 105,
-        "Descriptio": "Onawa I 29",
+        "Descriptio": "Onawa",
         "Co_Number": 67,
         "County": "MONONA",
         "Road": "I 29",
@@ -131,7 +131,7 @@
       "properties": {
         "FID": 5,
         "Atr_Number": 106,
-        "Descriptio": "Leon I 35",
+        "Descriptio": "Leon",
         "Co_Number": 27,
         "County": "DECATUR",
         "Road": "I 35",
@@ -256,7 +256,7 @@
       "properties": {
         "FID": 10,
         "Atr_Number": 115,
-        "Descriptio": "Atlantic I 80",
+        "Descriptio": "Atlantic",
         "Co_Number": 15,
         "County": "CASS",
         "Road": "I 80",
@@ -506,7 +506,7 @@
       "properties": {
         "FID": 20,
         "Atr_Number": 701,
-        "Descriptio": "Cedar Rapids Wilson",
+        "Descriptio": "Cedar Rapids",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "I 380",
@@ -531,7 +531,7 @@
       "properties": {
         "FID": 21,
         "Atr_Number": 703,
-        "Descriptio": "Cedar Rapids Coldstream",
+        "Descriptio": "Cedar Rapids",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "I 380",
@@ -556,7 +556,7 @@
       "properties": {
         "FID": 22,
         "Atr_Number": 704,
-        "Descriptio": "Council Bluffs I 29",
+        "Descriptio": "Council Bluffs",
         "Co_Number": 78,
         "County": "POTTAWATTAMIE",
         "Road": "I 29/80",
@@ -606,7 +606,7 @@
       "properties": {
         "FID": 24,
         "Atr_Number": 715,
-        "Descriptio": "Sioux City I 29",
+        "Descriptio": "Sioux City",
         "Co_Number": 97,
         "County": "WOODBURY",
         "Road": "I 29",
@@ -631,7 +631,7 @@
       "properties": {
         "FID": 25,
         "Atr_Number": 708,
-        "Descriptio": "Davenport I 280",
+        "Descriptio": "Davenport",
         "Co_Number": 82,
         "County": "SCOTT",
         "Road": "I 280",
@@ -656,7 +656,7 @@
       "properties": {
         "FID": 26,
         "Atr_Number": 709,
-        "Descriptio": "Des Moines Oralabor",
+        "Descriptio": "Des Moines",
         "Co_Number": 77,
         "County": "POLK",
         "Road": "I 35",
@@ -681,7 +681,7 @@
       "properties": {
         "FID": 27,
         "Atr_Number": 714,
-        "Descriptio": "Des Moines 2nd Ave",
+        "Descriptio": "Des Moines",
         "Co_Number": 77,
         "County": "POLK",
         "Road": "I 235",
@@ -731,7 +731,7 @@
       "properties": {
         "FID": 29,
         "Atr_Number": 803,
-        "Descriptio": "Sioux City IA 12",
+        "Descriptio": "Sioux City",
         "Co_Number": 97,
         "County": "WOODBURY",
         "Road": "IA 12",
@@ -906,7 +906,7 @@
       "properties": {
         "FID": 36,
         "Atr_Number": 811,
-        "Descriptio": "Council Bluffs IA 92",
+        "Descriptio": "Council Bluffs",
         "Co_Number": 78,
         "County": "POTTAWATTAMIE",
         "Road": "IA 192",
@@ -931,7 +931,7 @@
       "properties": {
         "FID": 37,
         "Atr_Number": 812,
-        "Descriptio": "Mason City IA 122",
+        "Descriptio": "Mason City",
         "Co_Number": 17,
         "County": "CERRO GORDO",
         "Road": "IA 122",
@@ -956,7 +956,7 @@
       "properties": {
         "FID": 38,
         "Atr_Number": 813,
-        "Descriptio": "Davenport US 6",
+        "Descriptio": "Davenport",
         "Co_Number": 82,
         "County": "SCOTT",
         "Road": "US 6",
@@ -981,7 +981,7 @@
       "properties": {
         "FID": 39,
         "Atr_Number": 815,
-        "Descriptio": "Cedar Rapids IA 922",
+        "Descriptio": "Cedar Rapids",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "IA 922",
@@ -1106,7 +1106,7 @@
       "properties": {
         "FID": 44,
         "Atr_Number": 823,
-        "Descriptio": "Iowa City US 6",
+        "Descriptio": "Iowa City",
         "Co_Number": 52,
         "County": "JOHNSON",
         "Road": "US 6",
@@ -1131,7 +1131,7 @@
       "properties": {
         "FID": 45,
         "Atr_Number": 824,
-        "Descriptio": "Ames US 69",
+        "Descriptio": "Ames",
         "Co_Number": 85,
         "County": "STORY",
         "Road": "US 69",
@@ -1181,7 +1181,7 @@
       "properties": {
         "FID": 47,
         "Atr_Number": 827,
-        "Descriptio": "Dubuque US 61",
+        "Descriptio": "Dubuque",
         "Co_Number": 31,
         "County": "DUBUQUE",
         "Road": "US 61/151",
@@ -1256,7 +1256,7 @@
       "properties": {
         "FID": 50,
         "Atr_Number": 831,
-        "Descriptio": "Des Moines  IA 5",
+        "Descriptio": "Des Moines",
         "Co_Number": 91,
         "County": "WARREN",
         "Road": "IA 5",
@@ -1506,7 +1506,7 @@
       "properties": {
         "FID": 60,
         "Atr_Number": 212,
-        "Descriptio": "Sigourney IA 92",
+        "Descriptio": "Sigourney",
         "Co_Number": 54,
         "County": "KEOKUK",
         "Road": "IA 92",
@@ -2431,7 +2431,7 @@
       "properties": {
         "FID": 97,
         "Atr_Number": 256,
-        "Descriptio": "Mason City US 18",
+        "Descriptio": "Mason City",
         "Co_Number": 17,
         "County": "CERRO GORDO",
         "Road": "US 18",
@@ -2556,7 +2556,7 @@
       "properties": {
         "FID": 102,
         "Atr_Number": 261,
-        "Descriptio": "Fort Dodge US 169",
+        "Descriptio": "Fort Dodge",
         "Co_Number": 94,
         "County": "WEBSTER",
         "Road": "US 169",
@@ -2781,7 +2781,7 @@
       "properties": {
         "FID": 111,
         "Atr_Number": 270,
-        "Descriptio": "Storm Lake US 71",
+        "Descriptio": "Storm Lake",
         "Co_Number": 11,
         "County": "BUENA VISTA",
         "Road": "US 71",
@@ -2831,7 +2831,7 @@
       "properties": {
         "FID": 113,
         "Atr_Number": 272,
-        "Descriptio": "Atlantic US 71",
+        "Descriptio": "Atlantic",
         "Co_Number": 15,
         "County": "CASS",
         "Road": "US 71",
@@ -3031,7 +3031,7 @@
       "properties": {
         "FID": 121,
         "Atr_Number": 280,
-        "Descriptio": "Leon IA 2",
+        "Descriptio": "Leon",
         "Co_Number": 27,
         "County": "DECATUR",
         "Road": "IA 2",
@@ -3156,7 +3156,7 @@
       "properties": {
         "FID": 126,
         "Atr_Number": 285,
-        "Descriptio": "Rockwell City US 20",
+        "Descriptio": "Rockwell City",
         "Co_Number": 13,
         "County": "CALHOUN",
         "Road": "US 20",
