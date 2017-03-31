@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="IowaDOT">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ATR Locations</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/IowaDOT.css">
+	<link rel="stylesheet" href="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://bmklein.github.io/LA558/LeafletPattern/leaflet.pattern.js"></script> 
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+	    <script src="https://bmklein.github.io/LA558/IowaCounties.json" type="text/javascript"></script>
+	  
+
+		
+	
+</head>
+  
+<body>
+
+
+	<div id="page">
+	
+
+                  
+    <div id="content">
+	<br>
+			    <div class="btn-group">
+        <button type="button" id="allRecorders" class="btn btn-success">All Recorders </button>
+        <button type="button" id="ADR" class="btn btn-success">ADR</button>
+        <button type="button" id="ADR+" class="btn btn-success">ADR+</button>
+		<button type="button" id="wave" class="btn btn-success">WAVE</button>
+		<button type="button" id="WIM" class="btn btn-success">WIM</button>
+        <button type="button" id="volume" class="btn btn-success">Volume</button>
+        <button type="button" id="3class" class="btn btn-success">3-Class</button>
+		<button type="button" id="13class" class="btn btn-success">13-Class</button>
+		<button type="button" id="speed" class="btn btn-success">Speed</button>
+		<button type="button" id="out" class="btn btn-success">Out</button>
+    </div>	
+		<div id="map">
+		<script>
+
+		
+//Awesome Markers		
+		var adrIcon = L.AwesomeMarkers.icon({
+			prefix: 'fa', //bootstrap
+			markerColor: 'black', // see colors above
+			icon: 'fa-car' 
+		});
+	
+		var outIcon = 	L.AwesomeMarkers.icon({
+			prefix: 'fa',  //ionicons.com 
+			markerColor: 'red',
+			icon: 'fa-car'
+		});
+		
+		//create the maps
+
+		var map = L.map('map').setView([42.0, -93.0], 8);
+
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+			maxZoom: 18
+		}).addTo(map);
+		
+
+
+
+		var promise = $.getJSON("https://bmklein.github.io/LA558/IowaATR.json");
+			promise.then(function(data) {
+
+	
+			var adr = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Unit == "ADR";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+
+
+
+			var adr1 = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Unit == "ADR+";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+
+
+			var wave = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Unit == "WAVE" ;
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+  
+  
+			var out = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Unit == "OUT" ;
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: outIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+
+
+			var allRecorders = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Unit != "zzzzzz";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+			
+			var WIM = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.WIM == 1;
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+			
+			var volume = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Classifica == "VOLUME";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+			
+			var Tclass = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Classifica == "3 CLASS";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+			
+			var Sclass = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Classifica == "13 CLASS";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+			
+			var speed = L.geoJson(data, {
+				filter: function(feature, layer) {
+					return feature.properties.Speed == "Y";
+				},
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+					icon: adrIcon
+					});
+				},
+				onEachFeature: function (feature, layer) {
+					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					layer.bindPopup(htmlText);
+				}
+			});
+
+
+			map.fitBounds(allRecorders.getBounds(), {
+				padding: [5, 5]
+			});
+	
+	
+			adr.addTo(map);
+			adr1.addTo(map);
+			wave.addTo(map);
+			out.addTo(map);
+
+
+			$("#allRecorders").click(function() {
+				map.addLayer(adr);
+				map.addLayer(adr1);
+				map.addLayer(wave);
+				map.addLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+		
+			$("#ADR").click(function() {
+				map.addLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+
+			$("#ADR+").click(function() {
+				map.removeLayer(adr);
+				map.addLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+
+			$("#wave").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.addLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+  
+			$("#out").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.addLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#WIM").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.addLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#volume").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.addLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#3class").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.addLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#13class").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.addLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#speed").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.removeLayer(volume);
+				map.removeLayer(Tclass);
+				map.removeLayer(Sclass);
+				map.addLayer(speed);
+			});
+		});
+
+
+
+			
+		</script>
+			
+    </div><br><br>
+
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
