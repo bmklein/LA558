@@ -16,7 +16,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 21770
+        "CoordGeoco": " ",
+        "GMRotation": 358.3942696,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -41,7 +43,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 13530
+        "CoordGeoco": " ",
+        "GMRotation": 358.4603895,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +70,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 27320
+        "CoordGeoco": " ",
+        "GMRotation": 0.616822058,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -91,7 +97,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 22963
+        "CoordGeoco": " ",
+        "GMRotation": 359.952753,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -106,7 +114,7 @@
       "properties": {
         "FID": 4,
         "Atr_Number": 105,
-        "Descriptio": "Onawa",
+        "Descriptio": "Onawa I 29",
         "Co_Number": 67,
         "County": "MONONA",
         "Road": "I 29",
@@ -116,7 +124,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 14096
+        "CoordGeoco": " ",
+        "GMRotation": 358.2568786,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -131,7 +141,7 @@
       "properties": {
         "FID": 5,
         "Atr_Number": 106,
-        "Descriptio": "Leon",
+        "Descriptio": "Leon I 35",
         "Co_Number": 27,
         "County": "DECATUR",
         "Road": "I 35",
@@ -141,7 +151,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 13661
+        "CoordGeoco": " ",
+        "GMRotation": 359.7745403,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -166,7 +178,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 20097
+        "CoordGeoco": " ",
+        "GMRotation": 0.101119666,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -191,7 +205,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 24441
+        "CoordGeoco": " ",
+        "GMRotation": 358.6754766,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -216,7 +232,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 32532
+        "CoordGeoco": " ",
+        "GMRotation": 1.025181231,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -241,7 +259,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 16741
+        "CoordGeoco": " ",
+        "GMRotation": 1.064062189,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -256,7 +276,7 @@
       "properties": {
         "FID": 10,
         "Atr_Number": 115,
-        "Descriptio": "Atlantic",
+        "Descriptio": "Atlantic I 80",
         "Co_Number": 15,
         "County": "CASS",
         "Road": "I 80",
@@ -266,7 +286,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 21331
+        "CoordGeoco": " ",
+        "GMRotation": 359.0556619,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -291,7 +313,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 39315
+        "CoordGeoco": " ",
+        "GMRotation": 359.7837738,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -316,7 +340,9 @@
         "Lanes": 6,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 75290
+        "CoordGeoco": " ",
+        "GMRotation": 359.9711565,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -341,7 +367,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 32582
+        "CoordGeoco": " ",
+        "GMRotation": 2.054109947,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -366,7 +394,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 33523
+        "CoordGeoco": " ",
+        "GMRotation": 1.535864138,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -391,7 +421,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 15227
+        "CoordGeoco": " ",
+        "GMRotation": 359.9828688,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -416,7 +448,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 21044
+        "CoordGeoco": " ",
+        "GMRotation": 359.8121498,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -441,7 +475,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 34996
+        "CoordGeoco": " ",
+        "GMRotation": 0.062439196,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -466,7 +502,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6311
+        "CoordGeoco": " ",
+        "GMRotation": 358.5224254,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -491,7 +529,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 53335
+        "CoordGeoco": " ",
+        "GMRotation": 1.240403077,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -506,7 +546,7 @@
       "properties": {
         "FID": 20,
         "Atr_Number": 701,
-        "Descriptio": "Cedar Rapids",
+        "Descriptio": "Cedar Rapids Wilson",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "I 380",
@@ -516,7 +556,9 @@
         "Lanes": 6,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 69639
+        "CoordGeoco": " ",
+        "GMRotation": 1.224140141,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -531,7 +573,7 @@
       "properties": {
         "FID": 21,
         "Atr_Number": 703,
-        "Descriptio": "Cedar Rapids",
+        "Descriptio": "Cedar Rapids Coldstream",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "I 380",
@@ -541,7 +583,9 @@
         "Lanes": 8,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 85038
+        "CoordGeoco": " ",
+        "GMRotation": 1.226884414,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -556,7 +600,7 @@
       "properties": {
         "FID": 22,
         "Atr_Number": 704,
-        "Descriptio": "Council Bluffs",
+        "Descriptio": "Council Bluffs I 29",
         "Co_Number": 78,
         "County": "POTTAWATTAMIE",
         "Road": "I 29/80",
@@ -566,7 +610,9 @@
         "Lanes": 5,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 75521
+        "CoordGeoco": " ",
+        "GMRotation": 358.4180265,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -591,7 +637,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 49577
+        "CoordGeoco": " ",
+        "GMRotation": 1.994815526,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -606,7 +654,7 @@
       "properties": {
         "FID": 24,
         "Atr_Number": 715,
-        "Descriptio": "Sioux City",
+        "Descriptio": "Sioux City I 29",
         "Co_Number": 97,
         "County": "WOODBURY",
         "Road": "I 29",
@@ -616,7 +664,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 33150
+        "CoordGeoco": " ",
+        "GMRotation": 358.0085974,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -631,7 +681,7 @@
       "properties": {
         "FID": 25,
         "Atr_Number": 708,
-        "Descriptio": "Davenport",
+        "Descriptio": "Davenport I 280",
         "Co_Number": 82,
         "County": "SCOTT",
         "Road": "I 280",
@@ -641,7 +691,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 19943
+        "CoordGeoco": " ",
+        "GMRotation": 1.912100384,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -656,7 +708,7 @@
       "properties": {
         "FID": 26,
         "Atr_Number": 709,
-        "Descriptio": "Des Moines",
+        "Descriptio": "Des Moines Oralabor",
         "Co_Number": 77,
         "County": "POLK",
         "Road": "I 35",
@@ -666,7 +718,9 @@
         "Lanes": 7,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 62687
+        "CoordGeoco": " ",
+        "GMRotation": 359.9488712,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -681,7 +735,7 @@
       "properties": {
         "FID": 27,
         "Atr_Number": 714,
-        "Descriptio": "Des Moines",
+        "Descriptio": "Des Moines 2nd Ave",
         "Co_Number": 77,
         "County": "POLK",
         "Road": "I 235",
@@ -691,7 +745,9 @@
         "Lanes": 7,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 68320
+        "CoordGeoco": " ",
+        "GMRotation": 359.9471315,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -716,7 +772,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 11665
+        "CoordGeoco": " ",
+        "GMRotation": 358.9225538,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -731,7 +789,7 @@
       "properties": {
         "FID": 29,
         "Atr_Number": 803,
-        "Descriptio": "Sioux City",
+        "Descriptio": "Sioux City IA 12",
         "Co_Number": 97,
         "County": "WOODBURY",
         "Road": "IA 12",
@@ -741,7 +799,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 20642
+        "CoordGeoco": " ",
+        "GMRotation": 358.0642764,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -766,7 +826,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3229
+        "CoordGeoco": " ",
+        "GMRotation": 359.2108542,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -791,7 +853,9 @@
         "Lanes": 2,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 2758
+        "CoordGeoco": " ",
+        "GMRotation": 359.1753855,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -816,7 +880,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 18621
+        "CoordGeoco": " ",
+        "GMRotation": 359.856118,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -841,7 +907,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 4545
+        "CoordGeoco": " ",
+        "GMRotation": 359.0381946,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -866,7 +934,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 5648
+        "CoordGeoco": " ",
+        "GMRotation": 0.396313693,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -891,7 +961,9 @@
         "Lanes": 3,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 11251
+        "CoordGeoco": " ",
+        "GMRotation": 359.9453255,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -906,7 +978,7 @@
       "properties": {
         "FID": 36,
         "Atr_Number": 811,
-        "Descriptio": "Council Bluffs",
+        "Descriptio": "Council Bluffs IA 92",
         "Co_Number": 78,
         "County": "POTTAWATTAMIE",
         "Road": "IA 192",
@@ -916,7 +988,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 10236
+        "CoordGeoco": " ",
+        "GMRotation": 358.4156175,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -931,7 +1005,7 @@
       "properties": {
         "FID": 37,
         "Atr_Number": 812,
-        "Descriptio": "Mason City",
+        "Descriptio": "Mason City IA 122",
         "Co_Number": 17,
         "County": "CERRO GORDO",
         "Road": "IA 122",
@@ -941,7 +1015,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 10542
+        "CoordGeoco": " ",
+        "GMRotation": 0.209132463,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -956,7 +1032,7 @@
       "properties": {
         "FID": 38,
         "Atr_Number": 813,
-        "Descriptio": "Davenport",
+        "Descriptio": "Davenport US 6",
         "Co_Number": 82,
         "County": "SCOTT",
         "Road": "US 6",
@@ -966,7 +1042,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 20323
+        "CoordGeoco": " ",
+        "GMRotation": 1.936660996,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -981,7 +1059,7 @@
       "properties": {
         "FID": 39,
         "Atr_Number": 815,
-        "Descriptio": "Cedar Rapids",
+        "Descriptio": "Cedar Rapids IA 922",
         "Co_Number": 57,
         "County": "LINN",
         "Road": "IA 922",
@@ -991,7 +1069,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 11355
+        "CoordGeoco": " ",
+        "GMRotation": 1.189341728,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1016,7 +1096,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 12909
+        "CoordGeoco": " ",
+        "GMRotation": 1.567719679,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1041,7 +1123,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 4946
+        "CoordGeoco": " ",
+        "GMRotation": 0.470663408,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1066,7 +1150,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "3 CLASS",
-        "AADT": 2870
+        "CoordGeoco": " ",
+        "GMRotation": 359.7280283,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1091,7 +1177,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 4170
+        "CoordGeoco": " ",
+        "GMRotation": 359.4129582,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1106,7 +1194,7 @@
       "properties": {
         "FID": 44,
         "Atr_Number": 823,
-        "Descriptio": "Iowa City",
+        "Descriptio": "Iowa City US 6",
         "Co_Number": 52,
         "County": "JOHNSON",
         "Road": "US 6",
@@ -1116,7 +1204,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 20069
+        "CoordGeoco": " ",
+        "GMRotation": 1.331550391,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1131,7 +1221,7 @@
       "properties": {
         "FID": 45,
         "Atr_Number": 824,
-        "Descriptio": "Ames",
+        "Descriptio": "Ames US 69",
         "Co_Number": 85,
         "County": "STORY",
         "Road": "US 69",
@@ -1141,7 +1231,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 17323
+        "CoordGeoco": " ",
+        "GMRotation": 359.9192913,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1166,7 +1258,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 14483
+        "CoordGeoco": " ",
+        "GMRotation": 0.022151665,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1181,7 +1275,7 @@
       "properties": {
         "FID": 47,
         "Atr_Number": 827,
-        "Descriptio": "Dubuque",
+        "Descriptio": "Dubuque US 61",
         "Co_Number": 31,
         "County": "DUBUQUE",
         "Road": "US 61/151",
@@ -1191,7 +1285,9 @@
         "Lanes": 5,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 22344
+        "CoordGeoco": " ",
+        "GMRotation": 1.91230113,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1216,7 +1312,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6167
+        "CoordGeoco": " ",
+        "GMRotation": 1.06386146,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1241,7 +1339,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2789
+        "CoordGeoco": " ",
+        "GMRotation": 0.586304722,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1256,7 +1356,7 @@
       "properties": {
         "FID": 50,
         "Atr_Number": 831,
-        "Descriptio": "Des Moines",
+        "Descriptio": "Des Moines  IA 5",
         "Co_Number": 91,
         "County": "WARREN",
         "Road": "IA 5",
@@ -1266,7 +1366,9 @@
         "Lanes": 6,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 23262
+        "CoordGeoco": " ",
+        "GMRotation": 359.8994834,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1291,7 +1393,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 2937
+        "CoordGeoco": " ",
+        "GMRotation": 0.199294558,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1316,7 +1420,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 3506
+        "CoordGeoco": " ",
+        "GMRotation": 359.0506424,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1341,7 +1447,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 14353
+        "CoordGeoco": " ",
+        "GMRotation": 358.1427091,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1366,7 +1474,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 13208
+        "CoordGeoco": " ",
+        "GMRotation": 1.308730475,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -1391,7 +1501,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 15538
+        "CoordGeoco": " ",
+        "GMRotation": 359.8672943,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1416,7 +1528,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 3372
+        "CoordGeoco": " ",
+        "GMRotation": 359.5375012,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1441,7 +1555,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 3441
+        "CoordGeoco": " ",
+        "GMRotation": 0.998814024,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1466,7 +1582,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 4173
+        "CoordGeoco": " ",
+        "GMRotation": 2.110659525,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1491,7 +1609,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 4365
+        "CoordGeoco": " ",
+        "GMRotation": 358.4847479,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1506,7 +1626,7 @@
       "properties": {
         "FID": 60,
         "Atr_Number": 212,
-        "Descriptio": "Sigourney",
+        "Descriptio": "Sigourney IA 92",
         "Co_Number": 54,
         "County": "KEOKUK",
         "Road": "IA 92",
@@ -1516,7 +1636,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 2560
+        "CoordGeoco": " ",
+        "GMRotation": 0.849711402,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1541,7 +1663,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 6891
+        "CoordGeoco": " ",
+        "GMRotation": 0.150775901,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1566,7 +1690,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6977
+        "CoordGeoco": " ",
+        "GMRotation": 1.565243377,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1591,7 +1717,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 3688
+        "CoordGeoco": " ",
+        "GMRotation": 359.5670807,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1616,7 +1744,9 @@
         "Lanes": 4,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 13712
+        "CoordGeoco": " ",
+        "GMRotation": 0.131234798,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1641,7 +1771,9 @@
         "Lanes": 2,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 3781
+        "CoordGeoco": " ",
+        "GMRotation": 359.6477227,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1666,7 +1798,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 4682
+        "CoordGeoco": " ",
+        "GMRotation": 359.7879236,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1691,7 +1825,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1516
+        "CoordGeoco": " ",
+        "GMRotation": 1.272056394,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1716,7 +1852,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1614
+        "CoordGeoco": " ",
+        "GMRotation": 359.2149363,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1741,7 +1879,9 @@
         "Lanes": 2,
         "Speed": "N",
         "Classifica": "VOLUME",
-        "AADT": 1732
+        "CoordGeoco": " ",
+        "GMRotation": 359.6319284,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1766,7 +1906,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1215
+        "CoordGeoco": " ",
+        "GMRotation": 358.9041507,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1791,7 +1933,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 2820
+        "CoordGeoco": " ",
+        "GMRotation": 358.765821,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1816,7 +1960,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 2489
+        "CoordGeoco": " ",
+        "GMRotation": 1.087083501,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1841,7 +1987,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 933
+        "CoordGeoco": " ",
+        "GMRotation": 0.136053538,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1866,7 +2014,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 802
+        "CoordGeoco": " ",
+        "GMRotation": 1.392918541,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1891,7 +2041,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1754
+        "CoordGeoco": " ",
+        "GMRotation": 359.6374825,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1916,7 +2068,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 883
+        "CoordGeoco": " ",
+        "GMRotation": 359.1579186,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1941,7 +2095,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1331
+        "CoordGeoco": " ",
+        "GMRotation": 358.8024947,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1966,7 +2122,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1306
+        "CoordGeoco": " ",
+        "GMRotation": 357.9566653,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -1991,7 +2149,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 894
+        "CoordGeoco": " ",
+        "GMRotation": 358.4605892,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2016,7 +2176,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1186
+        "CoordGeoco": " ",
+        "GMRotation": 359.0262826,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2041,7 +2203,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1234
+        "CoordGeoco": " ",
+        "GMRotation": 0.86088688,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2066,7 +2230,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 1978
+        "CoordGeoco": " ",
+        "GMRotation": 358.6082195,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2091,7 +2257,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 4448
+        "CoordGeoco": " ",
+        "GMRotation": 1.351292635,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2116,7 +2284,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 17808
+        "CoordGeoco": " ",
+        "GMRotation": 1.962292435,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2141,7 +2311,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 9869
+        "CoordGeoco": " ",
+        "GMRotation": 2.04520847,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2166,7 +2338,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 5773
+        "CoordGeoco": " ",
+        "GMRotation": 1.195497654,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2191,7 +2365,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 10650
+        "CoordGeoco": " ",
+        "GMRotation": 0.954578351,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2216,7 +2392,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 9996
+        "CoordGeoco": " ",
+        "GMRotation": 359.6287827,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2241,7 +2419,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 9325
+        "CoordGeoco": " ",
+        "GMRotation": 359.827274,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2266,7 +2446,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1211
+        "CoordGeoco": " ",
+        "GMRotation": 0.816985545,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2291,7 +2473,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 21112
+        "CoordGeoco": " ",
+        "GMRotation": 1.307926334,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2316,7 +2500,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 28598
+        "CoordGeoco": " ",
+        "GMRotation": 0.004551595,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2341,7 +2527,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 5749
+        "CoordGeoco": " ",
+        "GMRotation": 0.790886218,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2366,7 +2554,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 9678
+        "CoordGeoco": " ",
+        "GMRotation": 0.588313104,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2391,7 +2581,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3484
+        "CoordGeoco": " ",
+        "GMRotation": 358.5281139,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2416,7 +2608,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 9216
+        "CoordGeoco": " ",
+        "GMRotation": 0.172927282,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2431,7 +2625,7 @@
       "properties": {
         "FID": 97,
         "Atr_Number": 256,
-        "Descriptio": "Mason City",
+        "Descriptio": "Mason City US 18",
         "Co_Number": 17,
         "County": "CERRO GORDO",
         "Road": "US 18",
@@ -2441,7 +2635,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 8242
+        "CoordGeoco": " ",
+        "GMRotation": 0.147095688,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2466,7 +2662,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3609
+        "CoordGeoco": " ",
+        "GMRotation": 358.5839268,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2491,7 +2689,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 7789
+        "CoordGeoco": " ",
+        "GMRotation": 0.951633698,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2516,7 +2716,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 5978
+        "CoordGeoco": " ",
+        "GMRotation": 1.432937543,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2541,7 +2743,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2416
+        "CoordGeoco": " ",
+        "GMRotation": 358.9756894,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2556,7 +2760,7 @@
       "properties": {
         "FID": 102,
         "Atr_Number": 261,
-        "Descriptio": "Fort Dodge",
+        "Descriptio": "Fort Dodge US 169",
         "Co_Number": 94,
         "County": "WEBSTER",
         "Road": "US 169",
@@ -2566,7 +2770,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6015
+        "CoordGeoco": " ",
+        "GMRotation": 359.5131411,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2591,7 +2797,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2305
+        "CoordGeoco": " ",
+        "GMRotation": 0.666076674,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2616,7 +2824,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2484
+        "CoordGeoco": " ",
+        "GMRotation": 1.553330621,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2641,7 +2851,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6745
+        "CoordGeoco": " ",
+        "GMRotation": 1.293271274,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2666,7 +2878,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 8097
+        "CoordGeoco": " ",
+        "GMRotation": 1.892358585,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2691,7 +2905,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1772
+        "CoordGeoco": " ",
+        "GMRotation": 0.656104602,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2716,7 +2932,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 4580
+        "CoordGeoco": " ",
+        "GMRotation": 358.6831062,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2741,7 +2959,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3180
+        "CoordGeoco": " ",
+        "GMRotation": 358.6181248,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2766,7 +2986,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 4548
+        "CoordGeoco": " ",
+        "GMRotation": 359.5348915,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2781,7 +3003,7 @@
       "properties": {
         "FID": 111,
         "Atr_Number": 270,
-        "Descriptio": "Storm Lake",
+        "Descriptio": "Storm Lake US 71",
         "Co_Number": 11,
         "County": "BUENA VISTA",
         "Road": "US 71",
@@ -2791,7 +3013,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3058
+        "CoordGeoco": " ",
+        "GMRotation": 358.8948471,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2816,7 +3040,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3080
+        "CoordGeoco": " ",
+        "GMRotation": 359.2686744,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -2831,7 +3057,7 @@
       "properties": {
         "FID": 113,
         "Atr_Number": 272,
-        "Descriptio": "Atlantic",
+        "Descriptio": "Atlantic US 71",
         "Co_Number": 15,
         "County": "CASS",
         "Road": "US 71",
@@ -2841,7 +3067,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2405
+        "CoordGeoco": " ",
+        "GMRotation": 359.0066078,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2866,7 +3094,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2229
+        "CoordGeoco": " ",
+        "GMRotation": 0.250958274,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2891,7 +3121,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 12341
+        "CoordGeoco": " ",
+        "GMRotation": 0.337957497,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2916,7 +3148,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 13478
+        "CoordGeoco": " ",
+        "GMRotation": 1.712271092,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2941,7 +3175,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 3281
+        "CoordGeoco": " ",
+        "GMRotation": 0.804338448,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2966,7 +3202,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 9117
+        "CoordGeoco": " ",
+        "GMRotation": 0.862360296,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -2991,7 +3229,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 23410
+        "CoordGeoco": " ",
+        "GMRotation": 359.8161647,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3016,7 +3256,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 2488
+        "CoordGeoco": " ",
+        "GMRotation": 1.358854972,
+        "WIM": 1
       },
       "geometry": {
         "type": "Point",
@@ -3031,7 +3273,7 @@
       "properties": {
         "FID": 121,
         "Atr_Number": 280,
-        "Descriptio": "Leon",
+        "Descriptio": "Leon IA 2",
         "Co_Number": 27,
         "County": "DECATUR",
         "Road": "IA 2",
@@ -3041,7 +3283,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 1326
+        "CoordGeoco": " ",
+        "GMRotation": 359.7359254,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3066,7 +3310,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 11994
+        "CoordGeoco": " ",
+        "GMRotation": 1.524353864,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3091,7 +3337,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 888
+        "CoordGeoco": " ",
+        "GMRotation": 2.11915761,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3116,7 +3364,9 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 8730
+        "CoordGeoco": " ",
+        "GMRotation": 1.375452418,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3141,7 +3391,9 @@
         "Lanes": 2,
         "Speed": "Y",
         "Classifica": "3 CLASS",
-        "AADT": 2006
+        "CoordGeoco": " ",
+        "GMRotation": 1.511036999,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
@@ -3156,7 +3408,7 @@
       "properties": {
         "FID": 126,
         "Atr_Number": 285,
-        "Descriptio": "Rockwell City",
+        "Descriptio": "Rockwell City US 20",
         "Co_Number": 13,
         "County": "CALHOUN",
         "Road": "US 20",
@@ -3166,13 +3418,69 @@
         "Lanes": 4,
         "Speed": "Y",
         "Classifica": "13 CLASS",
-        "AADT": 6112
+        "CoordGeoco": " ",
+        "GMRotation": 359.2305961,
+        "WIM": 0
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -94.6497,
           42.4498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 127,
+        "Atr_Number": 286,
+        "Descriptio": "Glenwood 2 Mile W of I-29",
+        "Co_Number": 0,
+        "County": " ",
+        "Road": "US 34",
+        "District": 0,
+        "Unit": "ADR+",
+        "Configurat": "WLW",
+        "Lanes": 0,
+        "Speed": " ",
+        "Classifica": "13 CLASS",
+        "CoordGeoco": " ",
+        "GMRotation": 0,
+        "WIM": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.848,
+          41.0437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 128,
+        "Atr_Number": 287,
+        "Descriptio": "Lawton 0.6 MI E of US 75",
+        "Co_Number": 0,
+        "County": " ",
+        "Road": "US 20",
+        "District": 0,
+        "Unit": "ADR+",
+        "Configurat": "WLW",
+        "Lanes": 0,
+        "Speed": " ",
+        "Classifica": "13 CLASS",
+        "CoordGeoco": " ",
+        "GMRotation": 0,
+        "WIM": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.3053,
+          42.4755
         ]
       }
     }
