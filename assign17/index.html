@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 17>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 17</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/assign17.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+
+	  	
+	
+</head>
+  
+<body>
+
+
+	<div id="page">
+	
+
+                  
+    <div id="content">
+	<h1 id="header">Assignment 17</h1><br><br>
+	
+		<p style=text-align:center> Enter the address: <input type="text" id="myAddress">
+			<br><button type="button" id='geocode'>Click Me!</button>
+			<br><br>
+		</p>
+
+    </div>	
+		<div id="map">
+		<script>
+
+			var map = L.map('map').setView([42.030, -93.6319], 12);
+
+// add an OpenStreetMap tile layer
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+				maxZoom: 18
+			}).addTo(map);
+
+			$('#geocode').click(function () {
+				myAddress = encodeURI($('#myAddress').val());
+
+			var geocodingAPI_URL = "http://maps.googleapis.com/maps/api/geocode/json?address=" + myAddress + "&sensor=true";
+
+
+//Start Geocoding
+			$.getJSON(geocodingAPI_URL, function (json) {
+				var address = json.results[0].formatted_address;
+				var lat = json.results[0].geometry.location.lat;
+				var long = json.results[0].geometry.location.lng;
+				var county = '';
+			$.each(json.results[0].address_components, function (i, jsonData) {
+				level = jsonData.types[0];
+					if ('administrative_area_level_2' === level.toLowerCase()) {
+						county = (jsonData.short_name);
+					}
+					else if ('administrative_area_level_3' === level.toLowerCase()) {
+						township = (jsonData.short_name);
+					}
+			});        
+//now add the marker to the map
+			var marker = L.marker([lat, long], {
+				draggable: false,
+				title: address,
+			}).addTo(map);
+			htmlText = "<b>County: </b>" + county + "<br><b>Latitude: </b>" + lat + "<br><b>Longitude: </b>" + long + "<br><b>Township: </b>" + township;
+			marker.bindPopup(htmlText).openPopup();
+		
+			map.setView([lat, long]);
+    });
+}); //end geocode click function
+
+
+
+
+		
+		</script>
+			
+    </div><br><br>
+	
+	
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 17</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
