@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 18>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 18</title>
+	
+<!--External Data-->	
+	<script src="https://indicator.extension.iastate.edu/z_cjs/teachingGIS/webGIS_17/studentFeaturesDB.php?userID=bmklein&theFunction=responseVar"></script>
+	
+<!--External CSS-->
+	<link rel="stylesheet" href="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/assign18.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!--External JS-->	
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.js"></script>	
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+	
+	
+</head>
+  
+<body>
+
+
+	<div id="page">
+	
+
+                  
+    <div id="content">
+	<h1 id="header">Assignment 18</h1><br><br>
+	
+		<p style=text-align:center> Route Type: <input id = 'field1'> <br>
+			Title: <input id = 'field2'> <br>
+			Text: <input id = 'field3'> <br>
+			Use either "interstate", "us", or "iowa" for input into the "Route Type" field, otherwise a red icon will appear
+		</p>
+
+    </div>	
+		<div id="map">
+		<script>
+
+			var userID = 'bmklein';
+
+			var responseURL = "https://indicator.extension.iastate.edu/z_cjs/teachingGIS/webGIS_17/studentFeaturesDB.php?userID=" + userID + "&theFunction=response";
+
+			console.log(responseURL);
+
+			var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+			});
+
+
+			var map = L.map('map').setView([42.0, -93.634], 7);
+				osm.addTo(map);
+			map.on('click', addMarker);
+
+			function addMarker(e) {
+				field1 = $("#field1").val();
+				field2 = $("#field2").val();
+				field3 = $("#field3").val();
+
+				var newMarker = new L.marker(e.latlng)
+					.bindPopup("<strong>" + field2 + "</strong><br>" + field3)
+					.bindTooltip(field1)
+					.addTo(map);
+
+				latitude = e.latlng.lat;
+				longitude = e.latlng.lng;	
+	
+				var myData = "field1="+field1+"&field2=" + field2 + "&field3=" + field3 + "&latitude="+latitude+ "&longitude="+longitude;
+
+				jQuery.ajax({
+					type: "POST", // HTTP method POST or GET
+					url: "https://indicator.extension.iastate.edu/z_cjs/teachingGIS/webGIS_17/studentFeaturesDB.php?userID=bmklein&theFunction=insert", //Where to make Ajax calls
+					dataType: "text", // Data type, HTML, json etc.
+					data: myData, //Form variables
+					success: function(response) {      
+					},
+					error: function(xhr, ajaxOptions, thrownError) {
+					console.log(thrownError);
+					}
+				});
+			}
+
+			var interstateIcon = L.AwesomeMarkers.icon({
+				prefix: 'fa', //bootstrap
+				markerColor: 'darkblue', // see colors above
+				icon: 'fa-car'
+			});
+
+			var usIcon = L.AwesomeMarkers.icon({
+				prefix: 'fa', //font awesome rather than bootstrap
+				markerColor: 'black',
+				icon: 'fa-car'
+			});
+
+			var iowaIcon = L.AwesomeMarkers.icon({
+				prefix: 'fa', 
+				markerColor: 'white',
+				iconColor: 'black',
+				icon: 'fa-car'
+			});
+
+			var redIcon = L.AwesomeMarkers.icon({
+				prefix: 'fa', 
+				markerColor: 'red',
+				icon: 'fa-car'
+			});
+	
+
+			function getIcon(d) {
+				return d == 'interstate' ? interstateIcon :
+					d == 'us' ? usIcon :
+					d == 'iowa' ? iowaIcon :
+					redIcon; 
+			}
+
+			var geojsonLayer2b = new L.GeoJSON.AJAX(responseURL, {
+				pointToLayer: function(feature, latlng) {
+					return L.marker(latlng, {
+						icon: getIcon(feature.properties.field1)	
+					})
+					.on('mouseover', function() {  this.bindPopup("<strong>"+feature.properties.field2+"</strong><br>"+feature.properties.field3).openPopup();
+					});
+				}
+			}).addTo(map);
+
+
+
+			$.getJSON("https://bmklein.github.io/LA558/iowaBorder.json", function(data) {
+				var iowaBorder = L.geoJson(data, {
+				onEachFeature: function (feature, layer) {
+				}
+			});
+
+			iowaBorder.addTo(map);
+			});
+
+
+//layer Control
+
+			var baseMaps = {
+				"OSM": osm,
+			};
+
+			var overlayMaps = {
+				"Loaded with plugin & icons": geojsonLayer2b,
+			};
+
+			L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+		</script>
+			
+    </div><br><br>
+	
+	
+	<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 18</h5>
+
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
