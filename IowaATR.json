@@ -4,21 +4,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 0,
-        "Atr_Number": 100,
-        "Descriptio": "Honey Creek",
-        "Co_Number": 78,
-        "County": "POTTAWATTAMIE",
-        "Road": "I 29",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.3942696,
-        "WIM": 0
+        "ID": 100,
+        "group": 1,
+        "Descrip": "Honey Creek-I 29",
+        "SW ID": 1000,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -31,21 +28,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 1,
-        "Atr_Number": 102,
-        "Descriptio": "Pacific Junction",
-        "Co_Number": 65,
-        "County": "MILLS",
-        "Road": "I 29",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.4603895,
-        "WIM": 0
+        "ID": 102,
+        "group": 1,
+        "Descrip": "Pacific Jct.-I 29",
+        "SW ID": 1020,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -58,48 +52,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 2,
-        "Atr_Number": 103,
-        "Descriptio": "Grinnell",
-        "Co_Number": 79,
-        "County": "POWESHIEK",
-        "Road": "I 80",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.616822058,
-        "WIM": 0
+        "ID": 103,
+        "group": 1,
+        "Descrip": "Grinnell-I 80",
+        "SW ID": 1030,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": " "
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -92.5783,
-          41.6956
+          41.6958
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 3,
-        "Atr_Number": 104,
-        "Descriptio": "Jewell",
-        "Co_Number": 40,
-        "County": "HAMILTON",
-        "Road": "I 35",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.952753,
-        "WIM": 1
+        "ID": 104,
+        "group": 1,
+        "Descrip": "Jewell-I 35",
+        "SW ID": 1040,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -112,21 +100,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 4,
-        "Atr_Number": 105,
-        "Descriptio": "Onawa I 29",
-        "Co_Number": 67,
-        "County": "MONONA",
-        "Road": "I 29",
-        "District": 3,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.2568786,
-        "WIM": 0
+        "ID": 105,
+        "group": 1,
+        "Descrip": "Onawa-I 29",
+        "SW ID": 1050,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -139,48 +124,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 5,
-        "Atr_Number": 106,
-        "Descriptio": "Leon I 35",
-        "Co_Number": 27,
-        "County": "DECATUR",
-        "Road": "I 35",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.7745403,
-        "WIM": 0
+        "ID": 106,
+        "group": 1,
+        "Descrip": "Leon-I 35",
+        "SW ID": 1060,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.8369,
-          40.7572
+          -93.8402,
+          40.7472
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 6,
-        "Atr_Number": 109,
-        "Descriptio": "Hanlontown",
-        "Co_Number": 17,
-        "County": "CERRO GORDO",
-        "Road": "I 35",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.101119666,
-        "WIM": 0
+        "ID": 109,
+        "group": 1,
+        "Descrip": "Hanlontown-I 35",
+        "SW ID": 1090,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -193,21 +172,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 7,
-        "Atr_Number": 110,
-        "Descriptio": "Shelby",
-        "Co_Number": 78,
-        "County": "POTTAWATTAMIE",
-        "Road": "I 80",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.6754766,
-        "WIM": 0
+        "ID": 110,
+        "group": 1,
+        "Descrip": "Shelby-I 80",
+        "SW ID": 1100,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -220,21 +196,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 8,
-        "Atr_Number": 111,
-        "Descriptio": "Williamsburg",
-        "Co_Number": 48,
-        "County": "IOWA",
-        "Road": "I 80",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.025181231,
-        "WIM": 1
+        "ID": 111,
+        "group": 1,
+        "Descrip": "Williamsburg-I 80",
+        "SW ID": 1110,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -247,21 +220,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 9,
-        "Atr_Number": 113,
-        "Descriptio": "Brandon",
-        "Co_Number": 6,
-        "County": "BENTON",
-        "Road": "I 380",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.064062189,
-        "WIM": 1
+        "ID": 113,
+        "group": 1,
+        "Descrip": "Brandon -I 380",
+        "SW ID": 1130,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WWP",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -274,21 +244,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 10,
-        "Atr_Number": 115,
-        "Descriptio": "Atlantic I 80",
-        "Co_Number": 15,
-        "County": "CASS",
-        "Road": "I 80",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.0556619,
-        "WIM": 0
+        "ID": 115,
+        "group": 1,
+        "Descrip": "Atlantic-I 80",
+        "SW ID": 1150,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -301,21 +268,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 11,
-        "Atr_Number": 116,
-        "Descriptio": "Waukee",
-        "Co_Number": 25,
-        "County": "DALLAS",
-        "Road": "I 80",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.7837738,
-        "WIM": 0
+        "ID": 116,
+        "group": 1,
+        "Descrip": "Waukee-I 80",
+        "SW ID": 1160,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -328,21 +292,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 12,
-        "Atr_Number": 117,
-        "Descriptio": "Altoona",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "I 80",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 6,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9711565,
-        "WIM": 0
+        "ID": 117,
+        "group": 1,
+        "Descrip": "Altoona-I 80",
+        "SW ID": 1170,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 6,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -355,21 +316,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 13,
-        "Atr_Number": 119,
-        "Descriptio": "LeClaire",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "I 80",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 2.054109947,
-        "WIM": 1
+        "ID": 119,
+        "group": 1,
+        "Descrip": "LeClaire-I 80",
+        "SW ID": 1190,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -382,21 +340,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 14,
-        "Atr_Number": 120,
-        "Descriptio": "Tipton",
-        "Co_Number": 16,
-        "County": "CEDAR",
-        "Road": "I 80",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.535864138,
-        "WIM": 1
+        "ID": 120,
+        "group": 1,
+        "Descrip": "Tipton-I 80",
+        "SW ID": 1200,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -409,21 +364,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 15,
-        "Atr_Number": 121,
-        "Descriptio": "Dows",
-        "Co_Number": 99,
-        "County": "WRIGHT",
-        "Road": "I 35",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9828688,
-        "WIM": 1
+        "ID": 121,
+        "group": 1,
+        "Descrip": "Dows-I 35",
+        "SW ID": 1210,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WWP",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -436,48 +388,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 16,
-        "Atr_Number": 122,
-        "Descriptio": "Cumming",
-        "Co_Number": 91,
-        "County": "WARREN",
-        "Road": "I 35",
-        "District": 5,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.8121498,
-        "WIM": 0
+        "ID": 122,
+        "group": 1,
+        "Descrip": "Cumming-I 35",
+        "SW ID": 1220,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.7807,
-          41.3684
+          -93.781,
+          41.3816
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 17,
-        "Atr_Number": 123,
-        "Descriptio": "Mitchellville",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "I 80",
-        "District": 1,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.062439196,
-        "WIM": 1
+        "ID": 123,
+        "group": 1,
+        "Descrip": "Mitchellville-I 80",
+        "SW ID": 1230,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -490,21 +436,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 18,
-        "Atr_Number": 124,
-        "Descriptio": "Beebeetown",
-        "Co_Number": 78,
-        "County": "POTTAWATTAMIE",
-        "Road": "I 680",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.5224254,
-        "WIM": 0
+        "ID": 124,
+        "group": 1,
+        "Descrip": "Beebeetown-I 680",
+        "SW ID": 1240,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 1,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -517,885 +460,66 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 19,
-        "Atr_Number": 125,
-        "Descriptio": "North Liberty",
-        "Co_Number": 52,
-        "County": "JOHNSON",
-        "Road": "I 380",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.240403077,
-        "WIM": 1
+        "ID": 125,
+        "group": 1,
+        "Descrip": "North Liberty-I 380",
+        "SW ID": 1250,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -91.6465,
-          41.7753
+          -91.6469,
+          41.7801
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 20,
-        "Atr_Number": 701,
-        "Descriptio": "Cedar Rapids Wilson",
-        "Co_Number": 57,
-        "County": "LINN",
-        "Road": "I 380",
-        "District": 6,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 6,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.224140141,
-        "WIM": 0
+        "ID": 126,
+        "group": 1,
+        "Descrip": "Hamburg-I 29",
+        "SW ID": 1260,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -91.6708,
-          41.9494
+          -95.6685,
+          40.5925
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 21,
-        "Atr_Number": 703,
-        "Descriptio": "Cedar Rapids Coldstream",
-        "Co_Number": 57,
-        "County": "LINN",
-        "Road": "I 380",
-        "District": 6,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 8,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.226884414,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.6667,
-          42.0003
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 22,
-        "Atr_Number": 704,
-        "Descriptio": "Council Bluffs I 29",
-        "Co_Number": 78,
-        "County": "POTTAWATTAMIE",
-        "Road": "I 29/80",
-        "District": 4,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 5,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.4180265,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.8639,
-          41.2333
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 23,
-        "Atr_Number": 705,
-        "Descriptio": "Bettendorf",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "I 74",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.994815526,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.5192,
-          41.5464
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 24,
-        "Atr_Number": 715,
-        "Descriptio": "Sioux City I 29",
-        "Co_Number": 97,
-        "County": "WOODBURY",
-        "Road": "I 29",
-        "District": 3,
-        "Unit": "OUT",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.0085974,
-        "WIM": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.4757,
-          42.4949
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 25,
-        "Atr_Number": 708,
-        "Descriptio": "Davenport I 280",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "I 280",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.912100384,
-        "WIM": 1
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.6428,
-          41.4869
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 26,
-        "Atr_Number": 709,
-        "Descriptio": "Des Moines Oralabor",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "I 35",
-        "District": 1,
-        "Unit": "ADR+",
-        "Configurat": "ITS",
-        "Lanes": 7,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9488712,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.5764,
-          41.7071
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 27,
-        "Atr_Number": 714,
-        "Descriptio": "Des Moines 2nd Ave",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "I 235",
-        "District": 1,
-        "Unit": "ADR+",
-        "Configurat": "ITS",
-        "Lanes": 7,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9471315,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.579,
-          41.6075
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 28,
-        "Atr_Number": 802,
-        "Descriptio": "Spirit Lake",
-        "Co_Number": 30,
-        "County": "DICKINSON",
-        "Road": "US 71",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 358.9225538,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.11,
-          43.4225
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 29,
-        "Atr_Number": 803,
-        "Descriptio": "Sioux City IA 12",
-        "Co_Number": 97,
-        "County": "WOODBURY",
-        "Road": "IA 12",
-        "District": 3,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.0642764,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.3925,
-          42.4897
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 30,
-        "Atr_Number": 804,
-        "Descriptio": "Pocahontas",
-        "Co_Number": 76,
-        "County": "POCAHONTAS",
-        "Road": "IA 4",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.2108542,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.6792,
-          42.7331
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 31,
-        "Atr_Number": 805,
-        "Descriptio": "Corning",
-        "Co_Number": 2,
-        "County": "ADAMS",
-        "Road": "IA 148",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 2,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.1753855,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.7322,
-          40.9919
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 32,
-        "Atr_Number": 806,
-        "Descriptio": "Windsor Heights",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "US 6",
-        "District": 1,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.856118,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.715,
-          41.6156
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 33,
-        "Atr_Number": 808,
-        "Descriptio": "Audubon",
-        "Co_Number": 5,
-        "County": "AUDUBON",
-        "Road": "US 71",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.0381946,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.9372,
-          41.7264
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 34,
-        "Atr_Number": 809,
-        "Descriptio": "Marshalltown",
-        "Co_Number": 64,
-        "County": "MARSHALL",
-        "Road": "IA 14",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 0.396313693,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.9078,
-          42.0633
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 35,
-        "Atr_Number": 810,
-        "Descriptio": "Indianola",
-        "Co_Number": 91,
-        "County": "WARREN",
-        "Road": "IA 92",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 3,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9453255,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.5817,
-          41.3564
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 36,
-        "Atr_Number": 811,
-        "Descriptio": "Council Bluffs IA 92",
-        "Co_Number": 78,
-        "County": "POTTAWATTAMIE",
-        "Road": "IA 192",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.4156175,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.8675,
-          41.2739
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 37,
-        "Atr_Number": 812,
-        "Descriptio": "Mason City IA 122",
-        "Co_Number": 17,
-        "County": "CERRO GORDO",
-        "Road": "IA 122",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.209132463,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.1875,
-          43.1492
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 38,
-        "Atr_Number": 813,
-        "Descriptio": "Davenport US 6",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "US 6",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 1.936660996,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.6061,
-          41.5603
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 39,
-        "Atr_Number": 815,
-        "Descriptio": "Cedar Rapids IA 922",
-        "Co_Number": 57,
-        "County": "LINN",
-        "Road": "IA 922",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "WAVE",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.189341728,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.7228,
-          41.9531
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 40,
-        "Atr_Number": 816,
-        "Descriptio": "West Burlington",
-        "Co_Number": 29,
-        "County": "DES MOINES",
-        "Road": "US 34",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.567719679,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.1574,
-          40.8162
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 41,
-        "Atr_Number": 819,
-        "Descriptio": "Osage",
-        "Co_Number": 66,
-        "County": "MITCHELL",
-        "Road": "US 218",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 0.470663408,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.7967,
-          43.2842
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 42,
-        "Atr_Number": 820,
-        "Descriptio": "Eagle Grove",
-        "Co_Number": 99,
-        "County": "WRIGHT",
-        "Road": "IA 17",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.7280283,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.9064,
-          42.6756
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 43,
-        "Atr_Number": 821,
-        "Descriptio": "Jefferson",
-        "Co_Number": 37,
-        "County": "GREENE",
-        "Road": "IA 4",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.4129582,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.3772,
-          42.0075
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 44,
-        "Atr_Number": 823,
-        "Descriptio": "Iowa City US 6",
-        "Co_Number": 52,
-        "County": "JOHNSON",
-        "Road": "US 6",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 1.331550391,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.5103,
-          41.6414
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 45,
-        "Atr_Number": 824,
-        "Descriptio": "Ames US 69",
-        "Co_Number": 85,
-        "County": "STORY",
-        "Road": "US 69",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.9192913,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.6206,
-          42.0372
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 46,
-        "Atr_Number": 826,
-        "Descriptio": "Bondurant",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "US 65",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.022151665,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.4669,
-          41.6842
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 47,
-        "Atr_Number": 827,
-        "Descriptio": "Dubuque US 61",
-        "Co_Number": 31,
-        "County": "DUBUQUE",
-        "Road": "US 61/151",
-        "District": 6,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 5,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.91230113,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.6425,
-          42.5156
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 48,
-        "Atr_Number": 828,
-        "Descriptio": "Oelwein",
-        "Co_Number": 33,
-        "County": "FAYETTE",
-        "Road": "IA 150",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.06386146,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -91.9103,
-          42.6604
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 49,
-        "Atr_Number": 830,
-        "Descriptio": "Oskaloosa",
-        "Co_Number": 62,
-        "County": "MAHASKA",
-        "Road": "IA 23",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.586304722,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.6239,
-          41.284
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 50,
-        "Atr_Number": 831,
-        "Descriptio": "Des Moines  IA 5",
-        "Co_Number": 91,
-        "County": "WARREN",
-        "Road": "IA 5",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "ITS",
-        "Lanes": 6,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.8994834,
-        "WIM": 0
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -93.6502,
-          41.5099
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 51,
-        "Atr_Number": 201,
-        "Descriptio": "Hampton",
-        "Co_Number": 35,
-        "County": "FRANKLIN",
-        "Road": "US 65",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.199294558,
-        "WIM": 0
+        "ID": 201,
+        "group": 2,
+        "Descrip": "Hampton-US 65",
+        "SW ID": 2010,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1408,21 +532,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 52,
-        "Atr_Number": 202,
-        "Descriptio": "Hamlin",
-        "Co_Number": 5,
-        "County": "AUDUBON",
-        "Road": "US 71",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.0506424,
-        "WIM": 0
+        "ID": 202,
+        "group": 2,
+        "Descrip": "Hamlin-US 71",
+        "SW ID": 2020,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1435,75 +556,66 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 53,
-        "Atr_Number": 204,
-        "Descriptio": "Hinton",
-        "Co_Number": 75,
-        "County": "PLYMOUTH",
-        "Road": "US 75",
-        "District": 3,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.1427091,
-        "WIM": 0
+        "ID": 204,
+        "group": 2,
+        "Descrip": "Hinton-US 75",
+        "SW ID": 2040,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.2753,
-          42.6689
+          -96.2766,
+          42.6659
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 54,
-        "Atr_Number": 205,
-        "Descriptio": "Swedesburg",
-        "Co_Number": 44,
-        "County": "HENRY",
-        "Road": "US 218",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.308730475,
-        "WIM": 1
+        "ID": 205,
+        "group": 2,
+        "Descrip": "Swedesburg-US 218",
+        "SW ID": 2050,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -91.5444,
-          41.0803
+          -91.5445,
+          41.0977
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 55,
-        "Atr_Number": 206,
-        "Descriptio": "Napier",
-        "Co_Number": 85,
-        "County": "STORY",
-        "Road": "US 30",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.8672943,
-        "WIM": 0
+        "ID": 206,
+        "group": 2,
+        "Descrip": "Napier-US 30",
+        "SW ID": 2060,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1516,48 +628,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 56,
-        "Atr_Number": 207,
-        "Descriptio": "Algona",
-        "Co_Number": 55,
-        "County": "KOSSUTH",
-        "Road": "US 18",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.5375012,
-        "WIM": 0
+        "ID": 207,
+        "group": 2,
+        "Descrip": "Algona-US 18",
+        "SW ID": 2070,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.1911,
-          43.0819
+          -94.1918,
+          43.0828
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 57,
-        "Atr_Number": 208,
-        "Descriptio": "Marengo",
-        "Co_Number": 48,
-        "County": "IOWA",
-        "Road": "US 6",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.998814024,
-        "WIM": 0
+        "ID": 208,
+        "group": 2,
+        "Descrip": "Marengo- US 6",
+        "SW ID": 2080,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1570,21 +676,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 58,
-        "Atr_Number": 209,
-        "Descriptio": "Princeton",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "US 67",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 2.110659525,
-        "WIM": 0
+        "ID": 209,
+        "group": 2,
+        "Descrip": "Princeton-US 67",
+        "SW ID": 2090,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1597,21 +700,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 59,
-        "Atr_Number": 210,
-        "Descriptio": "Sheldon",
-        "Co_Number": 71,
-        "County": "OBRIEN",
-        "Road": "US 18",
-        "District": 3,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.4847479,
-        "WIM": 0
+        "ID": 210,
+        "group": 2,
+        "Descrip": "Sheldon-US 18",
+        "SW ID": 2100,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1624,75 +724,66 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 60,
-        "Atr_Number": 212,
-        "Descriptio": "Sigourney IA 92",
-        "Co_Number": 54,
-        "County": "KEOKUK",
-        "Road": "IA 92",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.849711402,
-        "WIM": 0
+        "ID": 212,
+        "group": 2,
+        "Descrip": "Sigourney-IA 92",
+        "SW ID": 2120,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -92.2303,
-          41.3361
+          41.3366
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 61,
-        "Atr_Number": 213,
-        "Descriptio": "Colo",
-        "Co_Number": 85,
-        "County": "STORY",
-        "Road": "US 30",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.150775901,
-        "WIM": 0
+        "ID": 213,
+        "group": 2,
+        "Descrip": "Colo-US 30",
+        "SW ID": 2130,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.2747,
-          42.0081
+          -93.2803,
+          42.0077
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 62,
-        "Atr_Number": 214,
-        "Descriptio": "Burlington",
-        "Co_Number": 29,
-        "County": "DES MOINES",
-        "Road": "US 61",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.565243377,
-        "WIM": 0
+        "ID": 214,
+        "group": 2,
+        "Descrip": "Burlington-US 61",
+        "SW ID": 2140,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1705,21 +796,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 63,
-        "Atr_Number": 216,
-        "Descriptio": "Afton",
-        "Co_Number": 88,
-        "County": "UNION",
-        "Road": "US 34/169",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.5670807,
-        "WIM": 0
+        "ID": 216,
+        "group": 2,
+        "Descrip": "Afton-US 34",
+        "SW ID": 2160,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1732,21 +820,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 64,
-        "Atr_Number": 217,
-        "Descriptio": "Clear Lake",
-        "Co_Number": 17,
-        "County": "CERRO GORDO",
-        "Road": "IA 122",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 4,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 0.131234798,
-        "WIM": 0
+        "ID": 217,
+        "group": 2,
+        "Descrip": "Clear Lake-IA 122",
+        "SW ID": 2170,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1759,21 +844,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 65,
-        "Atr_Number": 218,
-        "Descriptio": "Adel",
-        "Co_Number": 25,
-        "County": "DALLAS",
-        "Road": "IA 44",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "L",
-        "Lanes": 2,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.6477227,
-        "WIM": 0
+        "ID": 218,
+        "group": 2,
+        "Descrip": "Adel-IA 44",
+        "SW ID": 2180,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1786,21 +868,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 66,
-        "Atr_Number": 219,
-        "Descriptio": "Osceola",
-        "Co_Number": 20,
-        "County": "CLARKE",
-        "Road": "US 34",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.7879236,
-        "WIM": 0
+        "ID": 219,
+        "group": 2,
+        "Descrip": "Osceola-US 34",
+        "SW ID": 2190,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1813,21 +892,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 67,
-        "Atr_Number": 220,
-        "Descriptio": "Postville",
-        "Co_Number": 3,
-        "County": "ALLAMAKEE",
-        "Road": "US 52",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.272056394,
-        "WIM": 0
+        "ID": 220,
+        "group": 2,
+        "Descrip": "Postville-US 52",
+        "SW ID": 2200,
+        "type": "ADR",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1840,21 +916,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 68,
-        "Atr_Number": 221,
-        "Descriptio": "Armstrong",
-        "Co_Number": 32,
-        "County": "EMMET",
-        "Road": "IA 9",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.2149363,
-        "WIM": 0
+        "ID": 221,
+        "group": 2,
+        "Descrip": "Armstrong-IA 9",
+        "SW ID": 2210,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1867,21 +940,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 69,
-        "Atr_Number": 222,
-        "Descriptio": "Humboldt",
-        "Co_Number": 46,
-        "County": "HUMBOLDT",
-        "Road": "IA 3",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "L",
-        "Lanes": 2,
-        "Speed": "N",
-        "Classifica": "VOLUME",
-        "CoordGeoco": " ",
-        "GMRotation": 359.6319284,
-        "WIM": 0
+        "ID": 222,
+        "group": 2,
+        "Descrip": "Humboldt-IA 3",
+        "SW ID": 2220,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1894,21 +964,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 70,
-        "Atr_Number": 223,
-        "Descriptio": "Griswold",
-        "Co_Number": 15,
-        "County": "CASS",
-        "Road": "IA 48",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.9041507,
-        "WIM": 0
+        "ID": 223,
+        "group": 2,
+        "Descrip": "Griswold-IA 48",
+        "SW ID": 2230,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1921,21 +988,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 71,
-        "Atr_Number": 224,
-        "Descriptio": "Defiance",
-        "Co_Number": 83,
-        "County": "SHELBY",
-        "Road": "US 59",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.765821,
-        "WIM": 0
+        "ID": 224,
+        "group": 2,
+        "Descrip": "Defiance-US 59",
+        "SW ID": 2240,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1948,21 +1012,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 72,
-        "Atr_Number": 226,
-        "Descriptio": "West Union",
-        "Co_Number": 33,
-        "County": "FAYETTE",
-        "Road": "US 18",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.087083501,
-        "WIM": 0
+        "ID": 226,
+        "group": 2,
+        "Descrip": "West Union-US 18",
+        "SW ID": 2260,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -1975,21 +1036,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 73,
-        "Atr_Number": 228,
-        "Descriptio": "Mingo",
-        "Co_Number": 50,
-        "County": "JASPER",
-        "Road": "IA 117",
-        "District": 1,
-        "Unit": "OUT",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.136053538,
-        "WIM": 0
+        "ID": 228,
+        "group": 2,
+        "Descrip": "Mingo-IA 117",
+        "SW ID": 2280,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2002,26 +1060,23 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 74,
-        "Atr_Number": 229,
-        "Descriptio": "Winfield",
-        "Co_Number": 44,
-        "County": "HENRY",
-        "Road": "IA 78",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.392918541,
-        "WIM": 0
+        "ID": 229,
+        "group": 2,
+        "Descrip": "Winfield-IA 78",
+        "SW ID": 2290,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -91.4186,
+          -91.4094,
           41.0892
         ]
       }
@@ -2029,48 +1084,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 75,
-        "Atr_Number": 230,
-        "Descriptio": "Winterset",
-        "Co_Number": 61,
-        "County": "MADISON",
-        "Road": "US 169",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.6374825,
-        "WIM": 0
+        "ID": 230,
+        "group": 2,
+        "Descrip": "Winterset-US 169",
+        "SW ID": 2300,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.0417,
-          41.2783
+          -94.0421,
+          41.2775
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 76,
-        "Atr_Number": 231,
-        "Descriptio": "Anita",
-        "Co_Number": 15,
-        "County": "CASS",
-        "Road": "IA 148",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.1579186,
-        "WIM": 0
+        "ID": 231,
+        "group": 2,
+        "Descrip": "Anita-IA 148",
+        "SW ID": 2310,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2083,21 +1132,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 77,
-        "Atr_Number": 233,
-        "Descriptio": "Schaller",
-        "Co_Number": 11,
-        "County": "BUENA VISTA",
-        "Road": "IA 110",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.8024947,
-        "WIM": 0
+        "ID": 233,
+        "group": 2,
+        "Descrip": "Schaller-IA 110",
+        "SW ID": 2330,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2110,21 +1156,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 78,
-        "Atr_Number": 234,
-        "Descriptio": "Akron",
-        "Co_Number": 75,
-        "County": "PLYMOUTH",
-        "Road": "IA 12",
-        "District": 3,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 357.9566653,
-        "WIM": 0
+        "ID": 234,
+        "group": 2,
+        "Descrip": "Akron-IA 12",
+        "SW ID": 2340,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2137,21 +1180,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 79,
-        "Atr_Number": 235,
-        "Descriptio": "Marcus",
-        "Co_Number": 71,
-        "County": "OBRIEN",
-        "Road": "IA 143",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.4605892,
-        "WIM": 0
+        "ID": 235,
+        "group": 2,
+        "Descrip": "Marcus-IA 143",
+        "SW ID": 2350,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2164,21 +1204,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 80,
-        "Atr_Number": 236,
-        "Descriptio": "Sac City",
-        "Co_Number": 81,
-        "County": "SAC",
-        "Road": "IA 196",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.0262826,
-        "WIM": 1
+        "ID": 236,
+        "group": 2,
+        "Descrip": "Sac City-IA 196",
+        "SW ID": 2360,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WWP",
+        "WIM": 1,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2191,21 +1228,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 81,
-        "Atr_Number": 238,
-        "Descriptio": "Martinsburg",
-        "Co_Number": 54,
-        "County": "KEOKUK",
-        "Road": "IA 149",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.86088688,
-        "WIM": 0
+        "ID": 238,
+        "group": 2,
+        "Descrip": "Martinsburg-IA 149",
+        "SW ID": 2380,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2218,21 +1252,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 82,
-        "Atr_Number": 240,
-        "Descriptio": "Sidney",
-        "Co_Number": 36,
-        "County": "FREMONT",
-        "Road": "IA 2",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.6082195,
-        "WIM": 0
+        "ID": 240,
+        "group": 2,
+        "Descrip": "Sidney-IA 2",
+        "SW ID": 2400,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "PL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2245,48 +1276,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 83,
-        "Atr_Number": 241,
-        "Descriptio": "Ryan",
-        "Co_Number": 28,
-        "County": "DELAWARE",
-        "Road": "IA 13",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.351292635,
-        "WIM": 0
+        "ID": 241,
+        "group": 2,
+        "Descrip": "Ryan-IA 13",
+        "SW ID": 2410,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -91.4808,
-          42.3726
+          42.3744
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 84,
-        "Atr_Number": 242,
-        "Descriptio": "Eldridge",
-        "Co_Number": 82,
-        "County": "SCOTT",
-        "Road": "US 61",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.962292435,
-        "WIM": 1
+        "ID": 242,
+        "group": 2,
+        "Descrip": "Eldridge-US 61",
+        "SW ID": 2420,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WWP",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2299,21 +1324,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 85,
-        "Atr_Number": 243,
-        "Descriptio": "DeWitt",
-        "Co_Number": 23,
-        "County": "CLINTON",
-        "Road": "US 30",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 2.04520847,
-        "WIM": 1
+        "ID": 243,
+        "group": 2,
+        "Descrip": "DeWitt-US 30",
+        "SW ID": 2430,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2326,21 +1348,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 86,
-        "Atr_Number": 244,
-        "Descriptio": "Kalona",
-        "Co_Number": 52,
-        "County": "JOHNSON",
-        "Road": "IA 1",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.195497654,
-        "WIM": 0
+        "ID": 244,
+        "group": 2,
+        "Descrip": "Kalona-IA 1",
+        "SW ID": 2440,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2353,21 +1372,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 87,
-        "Atr_Number": 245,
-        "Descriptio": "Jesup",
-        "Co_Number": 7,
-        "County": "BLACK HAWK",
-        "Road": "US 20",
-        "District": 2,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.954578351,
-        "WIM": 0
+        "ID": 245,
+        "group": 2,
+        "Descrip": "Jesup-US 20",
+        "SW ID": 2450,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2380,21 +1396,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 88,
-        "Atr_Number": 246,
-        "Descriptio": "Perry",
-        "Co_Number": 25,
-        "County": "DALLAS",
-        "Road": "IA 141",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.6287827,
-        "WIM": 0
+        "ID": 246,
+        "group": 2,
+        "Descrip": "Perry-IA 141",
+        "SW ID": 2460,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "PPLL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2407,48 +1420,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 89,
-        "Atr_Number": 247,
-        "Descriptio": "Webster City",
-        "Co_Number": 40,
-        "County": "HAMILTON",
-        "Road": "US 20",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "LL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.827274,
-        "WIM": 0
+        "ID": 247,
+        "group": 2,
+        "Descrip": "Webster City-US 20",
+        "SW ID": 2470,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.7581,
-          42.4489
+          -93.7794,
+          42.4491
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 90,
-        "Atr_Number": 248,
-        "Descriptio": "Belle Plaine",
-        "Co_Number": 48,
-        "County": "IOWA",
-        "Road": "IA 21",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.816985545,
-        "WIM": 1
+        "ID": 248,
+        "group": 2,
+        "Descrip": "Belle Plaine-IA 21",
+        "SW ID": 2480,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WWP",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2461,21 +1468,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 91,
-        "Atr_Number": 249,
-        "Descriptio": "Hills",
-        "Co_Number": 52,
-        "County": "JOHNSON",
-        "Road": "US 218",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.307926334,
-        "WIM": 1
+        "ID": 249,
+        "group": 2,
+        "Descrip": "Hills-US 218",
+        "SW ID": 2490,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2488,21 +1492,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 92,
-        "Atr_Number": 250,
-        "Descriptio": "Pleasant Hill",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "US 65",
-        "District": 1,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.004551595,
-        "WIM": 1
+        "ID": 250,
+        "group": 2,
+        "Descrip": "Pleasant Hill-US 65",
+        "SW ID": 2500,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2515,21 +1516,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 93,
-        "Atr_Number": 252,
-        "Descriptio": "New Hampton",
-        "Co_Number": 19,
-        "County": "CHICKASAW",
-        "Road": "US 18/63",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.790886218,
-        "WIM": 1
+        "ID": 252,
+        "group": 2,
+        "Descrip": "New Hampton-US 18",
+        "SW ID": 2520,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2542,21 +1540,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 94,
-        "Atr_Number": 253,
-        "Descriptio": "Charles City",
-        "Co_Number": 34,
-        "County": "FLOYD",
-        "Road": "US 218",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.588313104,
-        "WIM": 1
+        "ID": 253,
+        "group": 2,
+        "Descrip": "Charles City-US 218",
+        "SW ID": 2530,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2569,75 +1564,66 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 95,
-        "Atr_Number": 254,
-        "Descriptio": "Sibley",
-        "Co_Number": 72,
-        "County": "OSCEOLA",
-        "Road": "IA 60",
-        "District": 3,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.5281139,
-        "WIM": 1
+        "ID": 254,
+        "group": 2,
+        "Descrip": "Sibley-IA 60",
+        "SW ID": 2540,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.6994,
-          43.4897
+          -95.7089,
+          43.4697
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 96,
-        "Atr_Number": 255,
-        "Descriptio": "Iowa Falls",
-        "Co_Number": 42,
-        "County": "HARDIN",
-        "Road": "US 20",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.172927282,
-        "WIM": 1
+        "ID": 255,
+        "group": 2,
+        "Descrip": "Iowa Falls-US 20",
+        "SW ID": 2550,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.2416,
-          42.4482
+          -93.2398,
+          42.4481
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 97,
-        "Atr_Number": 256,
-        "Descriptio": "Mason City US 18",
-        "Co_Number": 17,
-        "County": "CERRO GORDO",
-        "Road": "US 18",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.147095688,
-        "WIM": 1
+        "ID": 256,
+        "group": 2,
+        "Descrip": "Mason City-US 18",
+        "SW ID": 2560,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2650,26 +1636,23 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 98,
-        "Atr_Number": 257,
-        "Descriptio": "Holstein",
-        "Co_Number": 47,
-        "County": "IDA",
-        "Road": "US 20",
-        "District": 3,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.5839268,
-        "WIM": 0
+        "ID": 257,
+        "group": 2,
+        "Descrip": "Holstein-US 20",
+        "SW ID": 2570,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.616,
+          -95.6223,
           42.4748
         ]
       }
@@ -2677,21 +1660,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 99,
-        "Atr_Number": 258,
-        "Descriptio": "Blairstown",
-        "Co_Number": 6,
-        "County": "BENTON",
-        "Road": "US 30",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.951633698,
-        "WIM": 0
+        "ID": 258,
+        "group": 2,
+        "Descrip": "Blairstown-US 30",
+        "SW ID": 2580,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2704,21 +1684,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 100,
-        "Atr_Number": 259,
-        "Descriptio": "Lisbon",
-        "Co_Number": 16,
-        "County": "CEDAR",
-        "Road": "US 30",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.432937543,
-        "WIM": 0
+        "ID": 259,
+        "group": 2,
+        "Descrip": "Lisbon-US 30",
+        "SW ID": 2590,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2731,21 +1708,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 101,
-        "Atr_Number": 260,
-        "Descriptio": "Braddyville",
-        "Co_Number": 73,
-        "County": "PAGE",
-        "Road": "US 71",
-        "District": 4,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.9756894,
-        "WIM": 0
+        "ID": 260,
+        "group": 2,
+        "Descrip": "Braddyville-US 71",
+        "SW ID": 2600,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2758,48 +1732,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 102,
-        "Atr_Number": 261,
-        "Descriptio": "Fort Dodge US 169",
-        "Co_Number": 94,
-        "County": "WEBSTER",
-        "Road": "US 169",
-        "District": 1,
-        "Unit": "OUT",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.5131411,
-        "WIM": 1
+        "ID": 261,
+        "group": 2,
+        "Descrip": "Fort Dodge-US 169",
+        "SW ID": 2610,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.2275,
-          42.5753
+          -94.2272,
+          42.6359
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 103,
-        "Atr_Number": 262,
-        "Descriptio": "Bloomfield",
-        "Co_Number": 26,
-        "County": "DAVIS",
-        "Road": "US 63",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.666076674,
-        "WIM": 1
+        "ID": 262,
+        "group": 2,
+        "Descrip": "Bloomfield-US 63",
+        "SW ID": 2620,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2812,48 +1780,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 104,
-        "Atr_Number": 263,
-        "Descriptio": "Garnavillo",
-        "Co_Number": 22,
-        "County": "CLAYTON",
-        "Road": "US 52",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.553330621,
-        "WIM": 1
+        "ID": 263,
+        "group": 2,
+        "Descrip": "Garnavillo-US 52",
+        "SW ID": 2630,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -91.1789,
-          42.8231
+          -91.1801,
+          42.822
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 105,
-        "Atr_Number": 264,
-        "Descriptio": "Argyle",
-        "Co_Number": 56,
-        "County": "LEE",
-        "Road": "IA 27",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.293271274,
-        "WIM": 1
+        "ID": 264,
+        "group": 2,
+        "Descrip": "Argyle-IA 27",
+        "SW ID": 2640,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2866,21 +1828,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 106,
-        "Atr_Number": 265,
-        "Descriptio": "Maquoketa",
-        "Co_Number": 49,
-        "County": "JACKSON",
-        "Road": "US 61",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.892358585,
-        "WIM": 1
+        "ID": 265,
+        "group": 2,
+        "Descrip": "Maquoketa-US 61",
+        "SW ID": 2650,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2893,21 +1852,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 107,
-        "Atr_Number": 266,
-        "Descriptio": "West Grove",
-        "Co_Number": 26,
-        "County": "DAVIS",
-        "Road": "IA 2",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.656104602,
-        "WIM": 1
+        "ID": 266,
+        "group": 2,
+        "Descrip": "West Grove-IA 2",
+        "SW ID": 2660,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2920,48 +1876,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 108,
-        "Atr_Number": 267,
-        "Descriptio": "Emerson",
-        "Co_Number": 65,
-        "County": "MILLS",
-        "Road": "US 34",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.6831062,
-        "WIM": 1
+        "ID": 267,
+        "group": 2,
+        "Descrip": "Emerson-US 34",
+        "SW ID": 2670,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.4678,
-          41.0189
+          -95.473,
+          41.0309
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 109,
-        "Atr_Number": 268,
-        "Descriptio": "Dow City",
-        "Co_Number": 24,
-        "County": "CRAWFORD",
-        "Road": "US 30",
-        "District": 3,
-        "Unit": "ADR+",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.6181248,
-        "WIM": 0
+        "ID": 268,
+        "group": 2,
+        "Descrip": "Dow City-US 30",
+        "SW ID": 2680,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -2974,21 +1924,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 110,
-        "Atr_Number": 269,
-        "Descriptio": "Grand Junction",
-        "Co_Number": 37,
-        "County": "GREENE",
-        "Road": "US 30",
-        "District": 1,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.5348915,
-        "WIM": 1
+        "ID": 269,
+        "group": 2,
+        "Descrip": "Grand Junction-US 30",
+        "SW ID": 2690,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3001,21 +1948,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 111,
-        "Atr_Number": 270,
-        "Descriptio": "Storm Lake US 71",
-        "Co_Number": 11,
-        "County": "BUENA VISTA",
-        "Road": "US 71",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 358.8948471,
-        "WIM": 1
+        "ID": 270,
+        "group": 2,
+        "Descrip": "Storm Lake-US 71",
+        "SW ID": 2700,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3028,21 +1972,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 112,
-        "Atr_Number": 271,
-        "Descriptio": "Emmettsburg",
-        "Co_Number": 74,
-        "County": "PALO ALTO",
-        "Road": "US 18",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.2686744,
-        "WIM": 0
+        "ID": 271,
+        "group": 2,
+        "Descrip": "Emmetsburg-US 18",
+        "SW ID": 2710,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3055,21 +1996,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 113,
-        "Atr_Number": 272,
-        "Descriptio": "Atlantic US 71",
-        "Co_Number": 15,
-        "County": "CASS",
-        "Road": "US 71",
-        "District": 4,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.0066078,
-        "WIM": 1
+        "ID": 272,
+        "group": 2,
+        "Descrip": "Atlantic-US 71",
+        "SW ID": 2720,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3082,21 +2020,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 114,
-        "Atr_Number": 273,
-        "Descriptio": "Russell",
-        "Co_Number": 59,
-        "County": "LUCAS",
-        "Road": "US 34",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.250958274,
-        "WIM": 1
+        "ID": 273,
+        "group": 2,
+        "Descrip": "Russell-US 34",
+        "SW ID": 2730,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3109,21 +2044,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 115,
-        "Atr_Number": 274,
-        "Descriptio": "Pella",
-        "Co_Number": 63,
-        "County": "MARION",
-        "Road": "IA 163",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.337957497,
-        "WIM": 1
+        "ID": 274,
+        "group": 2,
+        "Descrip": "Pella-IA 163",
+        "SW ID": 2740,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3136,21 +2068,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 116,
-        "Atr_Number": 275,
-        "Descriptio": "Epworth",
-        "Co_Number": 31,
-        "County": "DUBUQUE",
-        "Road": "US 20",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.712271092,
-        "WIM": 1
+        "ID": 275,
+        "group": 2,
+        "Descrip": "Epworth-US 20",
+        "SW ID": 2750,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3163,21 +2092,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 117,
-        "Atr_Number": 276,
-        "Descriptio": "Lime Springs",
-        "Co_Number": 45,
-        "County": "HOWARD",
-        "Road": "US 63",
-        "District": 2,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.804338448,
-        "WIM": 1
+        "ID": 276,
+        "group": 2,
+        "Descrip": "Lime Springs-US 63",
+        "SW ID": 2760,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3190,21 +2116,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 118,
-        "Atr_Number": 277,
-        "Descriptio": "Agency",
-        "Co_Number": 90,
-        "County": "WAPELLO",
-        "Road": "US 34",
-        "District": 5,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0.862360296,
-        "WIM": 1
+        "ID": 277,
+        "group": 2,
+        "Descrip": "Agency-US 34",
+        "SW ID": 2770,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3217,48 +2140,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 119,
-        "Atr_Number": 278,
-        "Descriptio": "Grimes",
-        "Co_Number": 77,
-        "County": "POLK",
-        "Road": "IA 141",
-        "District": 1,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.8161647,
-        "WIM": 0
+        "ID": 278,
+        "group": 2,
+        "Descrip": "Grimes-IA 141",
+        "SW ID": 2780,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.7747,
-          41.6994
+          -93.7745,
+          41.6942
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 120,
-        "Atr_Number": 279,
-        "Descriptio": "Dundee",
-        "Co_Number": 28,
-        "County": "DELAWARE",
-        "Road": "IA 13",
-        "District": 6,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.358854972,
-        "WIM": 1
+        "ID": 279,
+        "group": 2,
+        "Descrip": "Dundee-IA 13",
+        "SW ID": 2790,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LWLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3271,48 +2188,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 121,
-        "Atr_Number": 280,
-        "Descriptio": "Leon IA 2",
-        "Co_Number": 27,
-        "County": "DECATUR",
-        "Road": "IA 2",
-        "District": 5,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.7359254,
-        "WIM": 0
+        "ID": 280,
+        "group": 2,
+        "Descrip": "Leon-IA 2",
+        "SW ID": 2800,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.8946,
-          40.7328
+          -93.877,
+          40.733
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 122,
-        "Atr_Number": 281,
-        "Descriptio": "Monticello",
-        "Co_Number": 53,
-        "County": "JONES",
-        "Road": "US 151",
-        "District": 6,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.524353864,
-        "WIM": 0
+        "ID": 281,
+        "group": 2,
+        "Descrip": "Monticello-US 151",
+        "SW ID": 2810,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3325,48 +2236,42 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 123,
-        "Atr_Number": 282,
-        "Descriptio": "Bellevue",
-        "Co_Number": 49,
-        "County": "JACKSON",
-        "Road": "US 52",
-        "District": 6,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 2.11915761,
-        "WIM": 0
+        "ID": 282,
+        "group": 2,
+        "Descrip": "Bellevue-US 52",
+        "SW ID": 2820,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.3334,
-          42.153
+          -90.3317,
+          42.1481
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 124,
-        "Atr_Number": 283,
-        "Descriptio": "Keokuk",
-        "Co_Number": 56,
-        "County": "LEE",
-        "Road": "US 61/218",
-        "District": 5,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.375452418,
-        "WIM": 0
+        "ID": 283,
+        "group": 2,
+        "Descrip": "Keokuk-US 61",
+        "SW ID": 2830,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3379,21 +2284,18 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 125,
-        "Atr_Number": 284,
-        "Descriptio": "Lansing",
-        "Co_Number": 3,
-        "County": "ALLAMAKEE",
-        "Road": "IA 9",
-        "District": 2,
-        "Unit": "WAVE",
-        "Configurat": "RADAR",
-        "Lanes": 2,
-        "Speed": "Y",
-        "Classifica": "3 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 1.511036999,
-        "WIM": 0
+        "ID": 284,
+        "group": 2,
+        "Descrip": "Lansing-IA 9",
+        "SW ID": 2840,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
       },
       "geometry": {
         "type": "Point",
@@ -3406,26 +2308,23 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 126,
-        "Atr_Number": 285,
-        "Descriptio": "Rockwell City US 20",
-        "Co_Number": 13,
-        "County": "CALHOUN",
-        "Road": "US 20",
-        "District": 3,
-        "Unit": "ADR",
-        "Configurat": "LPL",
-        "Lanes": 4,
-        "Speed": "Y",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 359.2305961,
-        "WIM": 0
+        "ID": 285,
+        "group": 2,
+        "Descrip": "Rockwell City-US 20",
+        "SW ID": 2850,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.6497,
+          -94.6417,
           42.4498
         ]
       }
@@ -3433,54 +2332,1872 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 127,
-        "Atr_Number": 286,
-        "Descriptio": "Glenwood 2 Mile W of I-29",
-        "Co_Number": 0,
-        "County": " ",
-        "Road": "US 34",
-        "District": 0,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 0,
-        "Speed": " ",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0,
-        "WIM": 1
+        "ID": 286,
+        "group": 2,
+        "Descrip": "Glenwood US 34",
+        "SW ID": 2860,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.848,
-          41.0437
+          -95.85687,
+          41.04569
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "FID": 128,
-        "Atr_Number": 287,
-        "Descriptio": "Lawton 0.6 MI E of US 75",
-        "Co_Number": 0,
-        "County": " ",
-        "Road": "US 20",
-        "District": 0,
-        "Unit": "ADR+",
-        "Configurat": "WLW",
-        "Lanes": 0,
-        "Speed": " ",
-        "Classifica": "13 CLASS",
-        "CoordGeoco": " ",
-        "GMRotation": 0,
-        "WIM": 1
+        "ID": 287,
+        "group": 2,
+        "Descrip": "Lawton-US 20 ",
+        "SW ID": 2870,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.3053,
-          42.4755
+          -96.31199,
+          42.47546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 300,
+        "group": 3,
+        "Descrip": "Churdan-P14",
+        "SW ID": 3000,
+        "type": "ADR",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.4748,
+          42.1204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 301,
+        "group": 3,
+        "Descrip": "Nevada-S14",
+        "SW ID": 3010,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.4626,
+          42.0644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 302,
+        "group": 3,
+        "Descrip": "Manilla-M55",
+        "SW ID": 3020,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2278,
+          41.9086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 303,
+        "group": 3,
+        "Descrip": "Onawa-K45",
+        "SW ID": 3030,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.0979,
+          41.9945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 304,
+        "group": 3,
+        "Descrip": "Sigourney-V45",
+        "SW ID": 3040,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.2201,
+          41.3864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 306,
+        "group": 3,
+        "Descrip": "Scranton-E53",
+        "SW ID": 3060,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5177,
+          42.0083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 307,
+        "group": 3,
+        "Descrip": "Clarion-R38",
+        "SW ID": 3070,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7352,
+          42.6893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 308,
+        "group": 3,
+        "Descrip": "Estherville-N32",
+        "SW ID": 3080,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7784,
+          43.4238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 309,
+        "group": 3,
+        "Descrip": "Hull-K52",
+        "SW ID": 3090,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1375,
+          43.1675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 310,
+        "group": 3,
+        "Descrip": "Grand Mound-Y52",
+        "SW ID": 3100,
+        "type": "ADR",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7235,
+          41.8111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 311,
+        "group": 3,
+        "Descrip": "Watkins-W12",
+        "SW ID": 3110,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.988,
+          41.9138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 312,
+        "group": 3,
+        "Descrip": "Boone-E26",
+        "SW ID": 3120,
+        "type": "ADR",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7499,
+          42.0782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 313,
+        "group": 3,
+        "Descrip": "Manchester-D42",
+        "SW ID": 3130,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.4799,
+          42.3909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 314,
+        "group": 3,
+        "Descrip": "Northwood-105",
+        "SW ID": 3140,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.0981,
+          43.437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 315,
+        "group": 3,
+        "Descrip": "Drakesville-180",
+        "SW ID": 3150,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.5067,
+          40.7986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 316,
+        "group": 3,
+        "Descrip": "Rockwell City-D36",
+        "SW ID": 3160,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5791,
+          42.3989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 400,
+        "group": 3,
+        "Descrip": "Primghar-B30",
+        "SW ID": 4000,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.6739,
+          43.1135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 401,
+        "group": 4,
+        "Descrip": "Clutier-U AVE",
+        "SW ID": 4010,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.3772,
+          42.108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 402,
+        "group": 4,
+        "Descrip": "Clutier-230",
+        "SW ID": 4020,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.3775,
+          42.1082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 403,
+        "group": 4,
+        "Descrip": "Albia-H47",
+        "SW ID": 4030,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.7147,
+          40.9918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 405,
+        "group": 4,
+        "Descrip": "Bassett-Exeter",
+        "SW ID": 4050,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.4559,
+          43.1116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 406,
+        "group": 4,
+        "Descrip": "Lorimor-Yellow Rose",
+        "SW ID": 4060,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.0335,
+          41.0989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 407,
+        "group": 4,
+        "Descrip": "Lorimor-H23",
+        "SW ID": 4070,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 1,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.0338,
+          41.0992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 500,
+        "group": 5,
+        "Descrip": "Fostoria-US 71",
+        "SW ID": 5000,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1505,
+          43.2269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 501,
+        "group": 5,
+        "Descrip": "Moravia-IA 5",
+        "SW ID": 5010,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.8247,
+          40.9608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 503,
+        "group": 5,
+        "Descrip": "Polk City-IA 415",
+        "SW ID": 5030,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7224,
+          41.7644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 600,
+        "group": 6,
+        "Descrip": "Springbrook-F25",
+        "SW ID": 6000,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.4356,
+          41.7769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 602,
+        "group": 6,
+        "Descrip": "Waterloo-George Wyth Park",
+        "SW ID": 6020,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.3942,
+          42.5369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 603,
+        "group": 6,
+        "Descrip": "Green Valley-Green Valley State Park",
+        "SW ID": 6030,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.3817,
+          41.1147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 701,
+        "group": 7,
+        "Descrip": "Cedar Rapids-Wilson",
+        "SW ID": 7010,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 6,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6712,
+          41.9496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 703,
+        "group": 7,
+        "Descrip": "Cedar Rapids-Coldstream",
+        "SW ID": 7030,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 8,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.6665,
+          41.9993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 704,
+        "group": 7,
+        "Descrip": "Council Bluffs-I 29",
+        "SW ID": 7040,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 5,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.8639,
+          41.2333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 705,
+        "group": 7,
+        "Descrip": "Bettendorf-I 74",
+        "SW ID": 7050,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5192,
+          41.5464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 708,
+        "group": 7,
+        "Descrip": "Davenport-I 280",
+        "SW ID": 7080,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "WLW",
+        "WIM": 1,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6428,
+          41.4869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 709,
+        "group": 7,
+        "Descrip": "Ankeny-I 35",
+        "SW ID": 7090,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 6,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.5765,
+          41.7082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 714.3,
+        "group": 7,
+        "Descrip": "Des Moines-I 235 Euclid Ave EB TRAFFIC",
+        "SW ID": 7140,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 3,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.5757,
+          41.6381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 714.7,
+        "group": 7,
+        "Descrip": "Des Moines-I 235 Euclid Ave WB TRAFFIC",
+        "SW ID": 7140,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 3,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.5757,
+          41.6381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 715,
+        "group": 7,
+        "Descrip": "Sioux City-I 29",
+        "SW ID": 7150,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 5,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4391,
+          42.4913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 716.3,
+        "group": 7,
+        "Descrip": "Des Moines- I 80/35",
+        "SW ID": 7160,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 3,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.6346,
+          41.6494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 716.7,
+        "group": 7,
+        "Descrip": "Des Moines- I 80/35",
+        "SW ID": 7160,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 3,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.6346,
+          41.6494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 802,
+        "group": 8,
+        "Descrip": "Spirit Lake-US 71",
+        "SW ID": 8020,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.11,
+          43.4225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 803,
+        "group": 8,
+        "Descrip": "Sioux City-IA 12",
+        "SW ID": 8030,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.3925,
+          42.4897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 804,
+        "group": 8,
+        "Descrip": "Pocahontas-IA 4",
+        "SW ID": 8040,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.6789,
+          42.7378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 805,
+        "group": 8,
+        "Descrip": "Corning-IA 148",
+        "SW ID": 8050,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.7319,
+          40.9921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 806,
+        "group": 8,
+        "Descrip": "Windsor Heights-US 6",
+        "SW ID": 8060,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.7147,
+          41.6147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 808,
+        "group": 8,
+        "Descrip": "Audubon-US 71",
+        "SW ID": 8080,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 1,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.9372,
+          41.7264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 809,
+        "group": 8,
+        "Descrip": "Marshalltown-IA 14",
+        "SW ID": 8090,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.9078,
+          42.0633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 810,
+        "group": 8,
+        "Descrip": "Indianola-IA 92",
+        "SW ID": 8100,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.5827,
+          41.3563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 812,
+        "group": 8,
+        "Descrip": "Mason City-IA 122",
+        "SW ID": 8120,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.1869,
+          43.148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 813,
+        "group": 8,
+        "Descrip": "Davenport-US 6",
+        "SW ID": 8130,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6061,
+          41.5603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 815,
+        "group": 8,
+        "Descrip": "Cedar Rapids-IA 922",
+        "SW ID": 8150,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.7228,
+          41.9531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 816,
+        "group": 8,
+        "Descrip": "West Burlington-US 34",
+        "SW ID": 8160,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1574,
+          40.8162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 819,
+        "group": 8,
+        "Descrip": "Osage-US 218",
+        "SW ID": 8190,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.7971,
+          43.2842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 820,
+        "group": 8,
+        "Descrip": "Eagle Grove-IA 17",
+        "SW ID": 8200,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.9058,
+          42.675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 821,
+        "group": 8,
+        "Descrip": "Jefferson-IA 4",
+        "SW ID": 8210,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.3773,
+          42.007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 823,
+        "group": 8,
+        "Descrip": "Iowa City-US 6",
+        "SW ID": 8230,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.5103,
+          41.6414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 824,
+        "group": 8,
+        "Descrip": "Ames-US 69",
+        "SW ID": 8240,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.6206,
+          42.0372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 826,
+        "group": 8,
+        "Descrip": "Bondurant-US 65",
+        "SW ID": 8260,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.4669,
+          41.6842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 827,
+        "group": 8,
+        "Descrip": "Dubuque-US 61",
+        "SW ID": 8270,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 5,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6425,
+          42.5156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 828,
+        "group": 8,
+        "Descrip": "Oelwein-IA 150",
+        "SW ID": 8280,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.9103,
+          42.6604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 830,
+        "group": 8,
+        "Descrip": "Oskaloosa-IA 23",
+        "SW ID": 8300,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.6239,
+          41.284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 831,
+        "group": 8,
+        "Descrip": "Des Moines-IA 5",
+        "SW ID": 8310,
+        "type": "WAVE",
+        "CLASS": "3 CLASS",
+        "CONFIG": "WAVE",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 6,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.6521,
+          41.5108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 900,
+        "group": 9,
+        "Descrip": "Storm Lake-Lake",
+        "SW ID": 9000,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2009,
+          42.6414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 901,
+        "group": 9,
+        "Descrip": "Fort Dodge-2nd",
+        "SW ID": 9010,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.176,
+          42.5083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 902,
+        "group": 9,
+        "Descrip": "Davenport-Locust",
+        "SW ID": 9020,
+        "type": "ADR",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5488,
+          41.5383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 903,
+        "group": 9,
+        "Descrip": "Ottumwa-Jefferson",
+        "SW ID": 9030,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.4057,
+          41.0181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 904,
+        "group": 9,
+        "Descrip": "Cedar Rapids-Johnson",
+        "SW ID": 9040,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.72,
+          41.9733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 905,
+        "group": 9,
+        "Descrip": "Ames-Northwestern",
+        "SW ID": 9050,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.6259,
+          42.0441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 906,
+        "group": 9,
+        "Descrip": "Iowa City-Dubuque",
+        "SW ID": 9060,
+        "type": "ADR",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 1,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.533,
+          41.6653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 907,
+        "group": 9,
+        "Descrip": "Cedar Falls-College",
+        "SW ID": 9070,
+        "type": "ADR+",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 3,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.4558,
+          42.5165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 908,
+        "group": 9,
+        "Descrip": "Sioux City-Lindenwood",
+        "SW ID": 9080,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4173,
+          42.5294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 909,
+        "group": 9,
+        "Descrip": "Sioux City-Hamilton",
+        "SW ID": 9090,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.4122,
+          42.5287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 910,
+        "group": 9,
+        "Descrip": "Dubuque - Grandview",
+        "SW ID": 9100,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.6781,
+          42.4813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 911,
+        "group": 9,
+        "Descrip": "Bode-Humboldt",
+        "SW ID": 9110,
+        "type": "ADR",
+        "CLASS": "VOLUME",
+        "CONFIG": "L",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.2874,
+          42.8659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 912,
+        "group": 9,
+        "Descrip": "Creston-Elm",
+        "SW ID": 9120,
+        "type": "ADR+",
+        "CLASS": "13 CLASS",
+        "CONFIG": "LPL",
+        "WIM": 0,
+        "SW": 0,
+        "out": 0,
+        "lanes": 2,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.3638,
+          41.0541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 914,
+        "group": 9,
+        "Descrip": "Council Bluffs-N 16th St",
+        "SW ID": 9140,
+        "type": "ADR+",
+        "CLASS": "3 CLASS",
+        "CONFIG": "LL",
+        "WIM": 0,
+        "SW": 1,
+        "out": 0,
+        "lanes": 4,
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.8675,
+          41.2737
         ]
       }
     }
