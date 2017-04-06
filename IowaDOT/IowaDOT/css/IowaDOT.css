@@ -5,109 +5,51 @@ body {
 }
 
 #header {
-  color: White;
-  text-align: center;
-  background-color: slategrey;
-  padding: 20px;
-  top: 0px;
-  margin-left: -3px;
-  margin-right: -3px;
-  margin-top: -3px;
-  border: solid;
-  borer-width: 3px;
-  border-color: darkslategrey;
-  border-radius: 5px;
-}
-
-
-#footer {
-	padding: 10px;
-	border: solid;
-	border-width: 3px;
-	border-color: darkslategrey;
-	background-color: slategrey;
-	border-radius: 5px;
-	margin-left: -3px;
-	margin-right: -3px;
-    width: 1230px;
-    float: left;
-    bottom: auto;
+	background-color: maroon;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
 }
 
 #page {
 	margin: auto;
 	left: 0px;
 	top: 0px;
-	width: 1250px;
-	height: 950px;
+	width: 950px;
+	height: 735px;
 	border: solid;
 	border-width: 5px;
-	border-color: darkslategrey;
+	border-color: #333333;
 	border-radius: 5px;
 	background-color: dimgrey;
 	box-shadow: 5px 5px 20px black;
 }
 
 #map {
-     width: 1200px;
-     height: 825px;
+     width: 800px;
+     height: 625px;
 	 border: solid;
-    left: 25px;
 	border-width: 5px;
-	border-color: darkslategrey;
+	border-color: #333333;
 	border-radius: 5px;
-    float:left;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+
 }
 
-#notes {
-     width: 1195px;
-     height: 490px;
-	 border: solid;
-    margin-left: 25px;
-	margin-top: 10px;
-	border-width: 5px;
-	border-color: darkslategrey;
+#btn-group {
+	float: left;
+
+}
+
+.btn {
+	color: white;
+	background-color: cadetblue;
+	padding: 10px 10px 10px 10px;
+	border-color: #333333;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
 	border-radius: 5px;
-    float:left;
-    padding-left: 5px;
 }
-
-
-.legend {
-    line-height: 10px;
-    color: #555;
-}
-.legend i {
-    width: 36px;
-    height: 40px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.9;
-}
-.info {
-    padding: 6px 8px;
-    font: 10px/40px Arial, Helvetica, sans-serif;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    border-radius: 5px;
-}
-div.btn-group {
-	padding-bottom: 30px;
-	left: 275px	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
