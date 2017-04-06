@@ -8,9 +8,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>ATR Locations</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/IowaDOT.css">
 	<link rel="stylesheet" href="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.css">
@@ -24,10 +21,9 @@
 	</script>
 	<script src="https://bmklein.github.io/LA558/AwesomeMarkers/leaflet.awesome-markers.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 	<script src="https://bmklein.github.io/LA558/LeafletPattern/leaflet.pattern.js"></script> 
 	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
-	    <script src="https://bmklein.github.io/LA558/IowaCounties.json" type="text/javascript"></script>
+	<script src="https://bmklein.github.io/LA558/IowaCounties.json" type="text/javascript"></script>
 	  
 
 		
@@ -37,24 +33,12 @@
 <body>
 
 
-	<div id="page">
-	
 
-                  
-    <div id="content">
-	<br>
-			    <div class="btn-group">
-        <button type="button" id="allRecorders" class="btn btn-success">All Recorders </button>
-        <button type="button" id="ADR" class="btn btn-success">ADR</button>
-        <button type="button" id="ADR+" class="btn btn-success">ADR+</button>
-		<button type="button" id="wave" class="btn btn-success">WAVE</button>
-		<button type="button" id="WIM" class="btn btn-success">WIM</button>
-        <button type="button" id="volume" class="btn btn-success">Volume</button>
-        <button type="button" id="3class" class="btn btn-success">3-Class</button>
-		<button type="button" id="13class" class="btn btn-success">13-Class</button>
-		<button type="button" id="speed" class="btn btn-success">Speed</button>
-		<button type="button" id="out" class="btn btn-success">Out</button>
-    </div>	
+		<div id="page">
+		<div id="header">
+		
+			<h1>Iowa DOT Continuous Count Stations</h1>
+		</div>	
 		<div id="map">
 		<script>
 
@@ -62,15 +46,53 @@
 //Awesome Markers		
 		var adrIcon = L.AwesomeMarkers.icon({
 			prefix: 'fa', //bootstrap
-			markerColor: 'black', // see colors above
+			markerColor: 'green', // see colors above
 			icon: 'fa-car' 
 		});
-	
+		
+		var waveIcon = L.AwesomeMarkers.icon({
+			prefix: 'fa', //bootstrap
+			markerColor: 'darkpurple', // see colors above
+			icon: 'fa-rss' 
+		});
+		
+		var wimIcon = L.AwesomeMarkers.icon({
+			prefix: 'fa', //bootstrap
+			markerColor: 'darkblue', // see colors above
+			icon: 'fa-truck' 
+		});
+		
 		var outIcon = 	L.AwesomeMarkers.icon({
 			prefix: 'fa',  //ionicons.com 
 			markerColor: 'red',
+			icon: 'fa-times'
+		});
+		
+		var volumeIcon = L.AwesomeMarkers.icon({
+			prefix: 'fa', //bootstrap
+			markerColor: 'lightgray', // see colors above
+			icon: 'fa-car' 
+		});
+		
+		var tclassIcon = L.AwesomeMarkers.icon({
+			prefix: 'fa', //bootstrap
+			markerColor: 'gray', // see colors above
+			//iconColor: 'black',
+			icon: 'fa-car' 
+		});
+		
+		var sclassIcon = 	L.AwesomeMarkers.icon({
+			prefix: 'fa',  //ionicons.com 
+			markerColor: 'black',
 			icon: 'fa-car'
 		});
+		
+		var speedIcon = 	L.AwesomeMarkers.icon({
+			prefix: 'fa',  //ionicons.com 
+			markerColor: 'orange',
+			icon: 'fa-car'
+		});
+		
 		
 		//create the maps
 
@@ -90,7 +112,7 @@
 	
 			var adr = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Unit == "ADR";
+					return feature.properties.type == "ADR";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
@@ -98,7 +120,7 @@
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
@@ -107,7 +129,7 @@
 
 			var adr1 = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Unit == "ADR+";
+					return feature.properties.type == "ADR+";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
@@ -115,7 +137,7 @@
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
@@ -123,15 +145,15 @@
 
 			var wave = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Unit == "WAVE" ;
+					return feature.properties.type == "WAVE" ;
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: waveIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
@@ -139,7 +161,7 @@
   
 			var out = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Unit == "OUT" ;
+					return feature.properties.out == 1 ;
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
@@ -147,7 +169,7 @@
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
@@ -155,89 +177,89 @@
 
 			var allRecorders = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Unit != "zzzzzz";
+					return feature.properties.type != "zzzzzz";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
 			
 			var WIM = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.WIM == 1;
+					return feature.properties.type == "WIM";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: wimIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
 			
 			var volume = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Classifica == "VOLUME";
+					return feature.properties.CLASS == "VOLUME";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: volumeIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
 			
 			var Tclass = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Classifica == "3 CLASS";
+					return feature.properties.CLASS == "3 CLASS";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: tclassIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
 			
 			var Sclass = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Classifica == "13 CLASS";
+					return feature.properties.CLASS == "13 CLASS";
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: sclassIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
 			
 			var speed = L.geoJson(data, {
 				filter: function(feature, layer) {
-					return feature.properties.Speed == "Y";
+					return feature.properties.SW == 1;
 				},
 				pointToLayer: function(feature, latlng) {
 					return L.marker(latlng, {
-					icon: adrIcon
+					icon: speedIcon
 					});
 				},
 				onEachFeature: function (feature, layer) {
-					htmlText = "<b>Unit ID: </b>" + feature.properties.Atr_Number + "<br><b>Location: </b>"  + feature.properties.Road + "<br><b>Nearest Town: </b>"  + feature.properties.Descriptio + "<br><b>Unit Type: </b>"  + feature.properties.Unit + "<br><b>District: </b>"  + feature.properties.District + "<br><b>Lanes: </b>"  + feature.properties.Lanes;
+					htmlText = "<b>Unit ID: </b>" + feature.properties.ID + "<br><b>Location: </b>"  + feature.properties.Descrip  + "<br><b>Unit Type: </b>"  + feature.properties.type  + "<br><b>Lanes: </b>"  + feature.properties.lanes + "<br><b>Classification: </b>"  + feature.properties.CLASS + "<br><b>Configuration: </b>"  + feature.properties.CONFIG;
 					layer.bindPopup(htmlText);
 				}
 			});
@@ -251,15 +273,16 @@
 			adr.addTo(map);
 			adr1.addTo(map);
 			wave.addTo(map);
+			WIM.addTo(map);
 			out.addTo(map);
 
 
-			$("#allRecorders").click(function() {
+			$("#allUnits").click(function() {
 				map.addLayer(adr);
 				map.addLayer(adr1);
 				map.addLayer(wave);
+				map.addLayer(WIM);
 				map.addLayer(out);
-				map.removeLayer(WIM);
 				map.removeLayer(volume);
 				map.removeLayer(Tclass);
 				map.removeLayer(Sclass);
@@ -268,18 +291,6 @@
 		
 			$("#ADR").click(function() {
 				map.addLayer(adr);
-				map.removeLayer(adr1);
-				map.removeLayer(wave);
-				map.removeLayer(out);
-				map.removeLayer(WIM);
-				map.removeLayer(volume);
-				map.removeLayer(Tclass);
-				map.removeLayer(Sclass);
-				map.removeLayer(speed);
-			});
-
-			$("#ADR+").click(function() {
-				map.removeLayer(adr);
 				map.addLayer(adr1);
 				map.removeLayer(wave);
 				map.removeLayer(out);
@@ -323,6 +334,18 @@
 				map.removeLayer(volume);
 				map.removeLayer(Tclass);
 				map.removeLayer(Sclass);
+				map.removeLayer(speed);
+			});
+			
+			$("#allClass").click(function() {
+				map.removeLayer(adr);
+				map.removeLayer(adr1);
+				map.removeLayer(wave);
+				map.removeLayer(out);
+				map.removeLayer(WIM);
+				map.addLayer(volume);
+				map.addLayer(Tclass);
+				map.addLayer(Sclass);
 				map.removeLayer(speed);
 			});
 			
@@ -381,15 +404,24 @@
 		</script>
 			
     </div><br><br>
+	<br>
+	<div id="btn-group">
+        <button type="button" id="allUnits" class="btn"><b>All Unit Type</b></button><br>
+        <button type="button" id="ADR" class="btn" style=background-color:#86b300><b>ADR</b></button><br>
+		<button type="button" id="wave" class="btn" style=background-color:#39004d><b>WAVE</b></button><br>
+		<button type="button" id="WIM" class="btn" style=background-color:#0059b3><b>WIM</b></button><br>
+		<button type="button" id="allClass" class="btn" style=margin-top:30px><b>All Class Type</b></button><br>
+        <button type="button" id="volume" class="btn" style=background-color:#b3b3b3><b>Volume</b></button><br>
+        <button type="button" id="3class" class="btn" style=background-color:#595959><b>3-Class</b></button><br>
+		<button type="button" id="13class" class="btn" style=background-color:black><b>13-Class</b></button><br>
+		<button type="button" id="speed" class="btn" style="background-color:orange; margin-top:30px"><b>StopWatch+</b></button><br>
+		<button type="button" id="out" class="btn" style="background-color:#cc0000; margin-top:30px"><b>Out</b></button><br>
+    </div>
 
-
-	</div><!--Page end-->
+	</div>
 	
   
 </body>
 
 
 </html>
-
-
-
