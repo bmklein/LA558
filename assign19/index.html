@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 19>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 19</title>
+		
+<!--External CSS-->
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/assign19.css">
+
+	
+	<!--External JS-->	
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+	
+</head>
+  
+<body>
+
+
+	<div id="page">
+	
+
+                  
+		<div id="content">
+			<h1 id="header">Assignment 19</h1><br><br>
+		</div>	
+		
+			<button id="btn" onclick="getLocation()">Get location</button>
+				
+		<div id="map">
+			<script>
+			
+			    var map = L.map('map').setView([42.0308, -93.6319], 13);
+
+				L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+					attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+					maxZoom: 18
+				}).addTo(map);
+			
+			    function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else {
+						$("#myLocation").html("Geolocation is not supported by this browser.");
+					}
+				}
+
+				function showPosition(position) {
+					map.setView(new L.LatLng(position.coords.latitude, position.coords.longitude), 17);
+					var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+						marker.bindPopup("<b>Latitude: </b>" + position.coords.latitude + 
+						"<br><b>Longitude: </b>" + position.coords.longitude).openPopup();
+				}
+
+
+			
+
+			
+
+
+
+
+			</script>
+		</div>
+			
+		<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 19</h5>
+	
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
