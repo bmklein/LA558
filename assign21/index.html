@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+
+	<meta name="description" content="Assignment 21>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Assignment 21</title>
+		
+<!--External CSS-->
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="css/assign21.css">
+
+	
+	<!--External JS-->	
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://indicator.extension.iastate.edu/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+	
+</head>
+  
+<body>
+
+
+	<div id="page">
+	
+
+                  
+		<div id="content">
+			<h1 id="header">Active Traffic Recorder Locations</h1><br><br>
+		</div>	
+		
+				
+		<div id="map">
+			<script>
+
+				var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+					attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+				});
+
+				var brandonMap = L.tileLayer('https://api.mapbox.com/styles/v1/bgeber706/cj1jilzvy000q2snqegsqfbpn/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmdlYmVyNzA2IiwiYSI6ImNqMWF6MXM4ZzA4OGIyd292MXB3NHZrYzQifQ.iDDWDZ7cMJifybSOcqdniQ', {
+					attribution: 'Brandon made this'
+				});
+
+				var map = L.map('map', {
+					center: [42.0308, -93.6319],
+					zoom: 13,
+					layers: [brandonMap]
+				});
+
+
+
+
+				var baseMaps = {
+					"Brandon's Map": brandonMap,
+					"OpenStreetMap": osm
+					
+				};
+
+				var overlayMaps = {
+				};
+				
+				L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+			</script>
+		</div>
+			
+		<h5 id="footer" style=text-align:left>Brandon Geber (Klein)<br>Assignment 21</h5>
+	
+	</div><!--Page end-->
+	
+  
+</body>
+
+
+</html>
+
+
+
